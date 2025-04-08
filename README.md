@@ -1,0 +1,1 @@
+Ce repo est utilisé dans le cadre du projet P-WebStatique-293 qui consiste à créer un site web (sujet à choix) de le faire responsive (pour les plus petits appareils) et l'héberger à la fin du projet (qui sera environ le 30.05.25) Ce repo a été fait pour pouvoir sauvegarder tout les fichiers du site.
