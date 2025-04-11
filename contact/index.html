@@ -22,6 +22,90 @@
                 <a href="/contact/index.html" class="Pagecourante"><button>Contact</button></a>
             </header>
         </article>
+
+        <fieldset>
+
+            <br><h4>Formulaire de contact</h4>
+              <p><br>Utilisez ce formulaire pour avoir une réponse à vos questions !</p><br>
+      
+              <form>
+              
+                <div>
+                  <label for="nom">Nom *</label>
+                  <input type="text" id="nom" name="Nom"><br></br>
+                </div>
+      
+                <div>
+                  <label for="prenom">Prénom *</label>
+                  <input type="text" id="prenom" name="prenom"><br></br>
+                </div>
+      
+                <div> 
+                  <label for="adresse">Adresse *</label>
+                  <input type="text" id="adresse" name="adresse"><br></br>
+                </div>
+      
+                <div> 
+                  <label for="lieu">Lieu</label>
+                  <input type="text" id="lieu" name="lieu"><br></br>
+                </div>
+      
+                <div> 
+                  <label for="numpostal">N° postal (NPA) * </label>
+                  <input type="text" id="numpostal" name="numpostal"><br></br>
+                </div>
+              
+                
+                  <fieldset>
+                      <legend>Votre commande</legend>
+      
+                      <p>Barquettes de fraises désirée :</p>
+      
+                      <table>
+                        <tr>
+                          <div>
+                            <td><input type="checkbox" name="typedefraises"> La gariguette<br></td>
+                            <td><input type="checkbox" name="typedefraises"> La mariquette<br></td>
+                            <td><input type="checkbox" name="typedefraises"> La cléry</td>
+                          </div>
+                        </tr>
+                      </table><br>
+      
+                      <label>Quantité *</label>
+                      <select name="quantite">
+                        <option value="choisir" selected="selected">-- Choisissez--</option>
+                        <option value="200">200g</option>
+                        <option value="400">400g</option>
+                        <option value="500">500g</option>
+                        <option value="800">800g</option>
+                        <option value="1000">1kg</option>
+                        <option value="2000">2kg</option>
+                      </select><br></br>
+                
+                      <fieldset>
+                        <legend>Mode de paiement</legend>
+                        <table>
+                          <tr>
+                            <div>
+                              <td><input type="radio" name="modedepaiement"> Payement à la livraison<br></td>
+                              <td><input type="radio" name="modedepaiement"> Carte bancaire<br></td>
+                              <td><input type="radio" name="modedepaiement"> PayPal</td>
+                            </div>
+                          </tr>
+                        </table>
+                      </fieldset>
+                      
+                  </fieldset>
+      
+                  
+                  <br><label>Votre message : </label><textarea></textarea></textarea></td><br></br>  
+                  <input type="checkbox" name="message"> J'accepte les condiotions générales *</td><br></br>
+      
+                  <br></br><button class="buttonsend">Envoyer</button><br></br><br></br>
+      
+                </form>
+      
+          </fieldset><br></br>
     
     </body>
 </html>
