@@ -1,111 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
+  <head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles.css">
-        <title>Contact - Lonfdrone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Contact - LonfDrone</title>
+      
+  </head>
+
+  <body>
+
+    <article>
+
+      <header>
         
-    </head>
+        <a href="/accueil/index.html"><img src="/Images/Logo-LonfDrone/LonfDrone-footer-black.png" width="10%" alt="Logo-LonfDrone"></a>
+        <a href="/accueil/index.html">Acceuil</a>
+        <a href="/explorer/index.html">Explorer</a>
+        <a href="/reglementations/index.html">Réglementations</a>
+        <a href="/shop/index.html">Shop</a>
+        <a href="/faq/index.html">FAQ</a>
+        <a href="/contact/index.html" class="Pagecourante"><button>Contact</button></a>
 
-    <body>
-        <article>
-            <header>
-                <a href="/accueil/index.html"><img src="/Images/Logo-LonfDrone/LonfDrone-footer-black.png" width="10%" alt="Logo-LonfDrone"></a>
-                <a href="/accueil/index.html">Acceuil</a>
-                <a href="/explorer/index.html">Explorer</a>
-                <a href="/reglementations/index.html">Réglementations</a>
-                <a href="/shop/index.html">Shop</a>
-                <a href="/faq/index.html">FAQ</a>
-                <a href="/contact/index.html" class="Pagecourante"><button>Contact</button></a>
-            </header>
-        </article>
+      </header>
+
+    </article>
+
+    <section class="Elements">
+
+      <article class="Contact">
+        <h1>Nos coordonnées :</h1>
+        <a href="mailto:contact@lonfdrone.com"><h2>contact@lonfdrone.com</h2></a>
+        <a href="tel:+41211111111"><h2>+41 22 111 11 11</h2></a>
+      </article>
+
+      <article class="Formulaire Contact">
 
         <fieldset>
 
-            <br><h4>Formulaire de contact</h4>
-              <p><br>Utilisez ce formulaire pour avoir une réponse à vos questions !</p><br>
-      
-              <form>
-              
-                <div>
-                  <label for="nom">Nom *</label>
-                  <input type="text" id="nom" name="Nom"><br></br>
-                </div>
-      
-                <div>
-                  <label for="prenom">Prénom *</label>
-                  <input type="text" id="prenom" name="prenom"><br></br>
-                </div>
-      
-                <div> 
-                  <label for="adresse">Adresse *</label>
-                  <input type="text" id="adresse" name="adresse"><br></br>
-                </div>
-      
-                <div> 
-                  <label for="lieu">Lieu</label>
-                  <input type="text" id="lieu" name="lieu"><br></br>
-                </div>
-      
-                <div> 
-                  <label for="numpostal">N° postal (NPA) * </label>
-                  <input type="text" id="numpostal" name="numpostal"><br></br>
-                </div>
-              
-                
-                  <fieldset>
-                      <legend>Votre commande</legend>
-      
-                      <p>Barquettes de fraises désirée :</p>
-      
-                      <table>
-                        <tr>
-                          <div>
-                            <td><input type="checkbox" name="typedefraises"> La gariguette<br></td>
-                            <td><input type="checkbox" name="typedefraises"> La mariquette<br></td>
-                            <td><input type="checkbox" name="typedefraises"> La cléry</td>
-                          </div>
-                        </tr>
-                      </table><br>
-      
-                      <label>Quantité *</label>
-                      <select name="quantite">
-                        <option value="choisir" selected="selected">-- Choisissez--</option>
-                        <option value="200">200g</option>
-                        <option value="400">400g</option>
-                        <option value="500">500g</option>
-                        <option value="800">800g</option>
-                        <option value="1000">1kg</option>
-                        <option value="2000">2kg</option>
-                      </select><br></br>
-                
-                      <fieldset>
-                        <legend>Mode de paiement</legend>
-                        <table>
-                          <tr>
-                            <div>
-                              <td><input type="radio" name="modedepaiement"> Payement à la livraison<br></td>
-                              <td><input type="radio" name="modedepaiement"> Carte bancaire<br></td>
-                              <td><input type="radio" name="modedepaiement"> PayPal</td>
-                            </div>
-                          </tr>
-                        </table>
-                      </fieldset>
-                      
-                  </fieldset>
-      
-                  
-                  <br><label>Votre message : </label><textarea></textarea></textarea></td><br></br>  
-                  <input type="checkbox" name="message"> J'accepte les condiotions générales *</td><br></br>
-      
-                  <br></br><button class="buttonsend">Envoyer</button><br></br><br></br>
-      
-                </form>
-      
-          </fieldset><br></br>
+          <br><h4>Formulaire de contact</h4>
     
-    </body>
+          <p><br>Écrivez ou posez-nous votre question !</p><br>
+    
+          <form>
+            <br>
+    
+            <div>
+    
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" required><br></br>
+    
+            </div>
+          
+            <div>
+    
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="Nom" required><br></br>
+    
+            </div>
+    
+            <div>
+    
+              <label for="adressemail">Adresse email *</label>
+              <input type="text" id="adressemail" name="adressemail" required><br></br>
+    
+            </div>
+    
+            <div>
+    
+              <label for="numerotel">Numero de téléphone *</label>
+              <input type="text" id="numerotel" name="numerotel" required><br></br>
+    
+            </div>
+    
+            <div> 
+    
+              <label for="lieu">Lieu *</label>
+              <input type="text" id="lieu" name="lieu" required><br></br>
+    
+            </div>
+    
+            <div> 
+          
+              <label for="numpostal">N° postal (NPA) * </label>
+              <input type="text" id="numpostal" name="numpostal" required><br></br>
+    
+            </div>
+          
+            <fieldset>
+              
+                <legend>Votre demmande</legend>
+    
+                <p>Type de la demande :</p>
+    
+                <table>
+    
+                  <tr>
+    
+                    <div>
+    
+                      <td><input type="radio" name="typedemande" required> Achat d'un drone<br></td>
+                      <td><input type="radio" name="typedemande" required> Renseignement<br></td>
+                      <td><input type="radio" name="typedemande" required> Autre</td>
+    
+                    </div>
+    
+                  </tr>
+    
+                </table><br>
+    
+                <div> 
+    
+                  <label for="sujet">Sujet de la demande *</label>
+                  <input type="text" id="sujet" name="sujet" required><br></br>
+        
+                </div>
+          
+            </fieldset>
+      
+            <br><label>Votre message :</label><br></br>
+            <textarea rows="4" cols="50"></textarea><br></br>
+    
+            <input type="checkbox" name="message" required> J'accepte les conditions générales *
+    
+            <button class="button-black">Envoyer</button><br></br>
+    
+          </form>
+      
+        </fieldset><br></br>
+
+       </article>
+      
+    </section>
+
+      <footer>
+        <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
+
+        <div class="ReseauxSociaux">
+            <a href="https://www.facebook.com"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
+            <a href="https://www.instagram.com"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
+            <a href="https://www.linkedin.com"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
+            <a href="https://www.youtube.com"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+        </div>
+    
+        <div class="Colonneliens">
+
+            <div class="colonne">
+                <a href="../explorer/index.html">Explorer</a>
+                <a href="../explorer/index.html">DJI Neo</a>
+                <a href="../explorer/index.html">DJI Mini 4 Pro</a>
+                <a href="../explorer/index.html">DJI Air 3</a>
+                <a href="../explorer/index.html">DJI Mavic 3 Pro</a>
+            </div>
+
+            <div class="colonne">
+                <a href="../reglementations/index.html">Reglementations</a>
+                <a href="../reglementations/index.html">Catégorie Ouverte</a>
+                <a href="../reglementations/index.html">Catégorie Spécifique</a>
+                <a href="../reglementations/index.html">Catégorie Certifiée</a>
+                <a href="../reglementations/index.html">Classes C0 - C6</a>
+            </div>
+
+            <div class="colonne">
+                <a href="../shop/index.html">Shop</a>
+                <a href="../shop/index.html">DJI Neo</a>
+                <a href="../shop/index.html">DJI Mini 4 Pro</a>
+                <a href="../shop/index.html">DJI Air 3</a>
+                <a href="../shop/index.html">DJI Mavic 3 Pro</a>
+            </div>
+
+            <div class="colonne">
+                <a href="../shop/index.html">Accessoires</a>
+                <a href="../faq/index.html">FAQ</a>
+                <a href="../contact/index.html">Contact</a>
+                <a href="../auteur/index.html">Auteur du site</a>
+                <a href="../mentions/index.html">Mentions légales</a>
+            </div>
+
+        </div>
+
+        <p>Copyright © 2025 LonfDrone. Tous droits réservés.</p>
+
+    </footer>
+  
+  </body>
+
 </html>
