@@ -1,23 +1,38 @@
 /*
 Auteur      : William.L
-Version     : 1.0
-Date        : 21.04.2025
-Description : Script permettant de rajouter ou supprimer la classe active de menuBurger, pour pouvoir l'ouvrir ou le fermer via le CSS.
+Version     : 2.0
+Date        : 22.04.2025
+Description : Scripts du site Lonfdrone
 */
 
-var menuBurger = document.getElementById("menuBurger");
-var buttonOuvrir = document.getElementById("buttonOuvrir");
-var buttonFermer = document.getElementById("buttonFermer");
+/* Script permettant de rajouter ou supprimer la classe active de menuBurger, pour pouvoir l'ouvrir ou le fermer via le CSS.*/
 
-buttonOuvrir.onclick = ouvrirNav;
-buttonFermer.onclick = fermerNav;
+    var menuBurger = document.getElementById("menuBurger");
+    var buttonOuvrir = document.getElementById("buttonOuvrir");
+    var buttonFermer = document.getElementById("buttonFermer");
 
-/* Set the width of the side navigation to 250px */
-function ouvrirNav() {
-    menuBurger.classList.add("active");
-}
+    buttonOuvrir.onclick = ouvrirNav;
+    buttonFermer.onclick = fermerNav;
 
-/* Set the width of the side navigation to 0 */
-function fermerNav() {
-    menuBurger.classList.remove("active");
-}
+    /* Fonction pour ajouter la classe active à menuBurger. (Aligné à 0px à droite)*/
+    function ouvrirNav() {
+        menuBurger.classList.add("active");
+    }
+
+    /* Fonction pour retirer la classe active à menuBurger. (Aligné à -255px à droite)*/
+    function fermerNav() {
+        menuBurger.classList.remove("active");
+    }
+
+/* Fonction pour vérifier les conditions du formulaire de contact*/
+
+    function Message() {
+
+        const verification = document.getElementById('condition').checked
+
+        if (verification) {
+        document.getElementById("reponse").innerHTML = "Votre formulaire a bien été envoyé.";
+        return false;
+        }
+
+    }

@@ -1,9 +1,13 @@
 /**
 *   Auteur      : William.L
-*   Version     : 1.0
-*   Date        : 13.02.2025
+*   Version     : 2.0
+*   Date        : 22.04.2025
 *   Description : Feuille de style pour toutes les pages du site lonfdrone.com        
 **/
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: white;
@@ -14,6 +18,8 @@ body {
 .header {
     overflow: hidden;
     background-color: #E0E0E0;
+    position: sticky;
+    top: 0;
 }
 
 .header-right {
@@ -120,30 +126,61 @@ body {
     font-size: 36px;
 }
 
-@media only screen and (max-width: 1024px) {
+/*Footer*/
 
-    .header img {
-        width: 280px;
-    }
+.footer {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    background-color: #E0E0E0;
+}
 
-    .header-right {
-        padding: 26px 0;
-    }
-        
-    .header-right a {
-        padding: 9.5px;
-        font-size: 16px;
-     }
-    
-    .header a.contact:hover  {
-        border: 2px solid black;
-    }
-    
-    .contact-active {
-        border: 2px solid black;
-        margin-right: 17px;
-    }
+.liens {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer p {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+.colonneLiens {
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    margin-left: 0;
+}
+
+.colonne ul {
+    list-style-type: none;
+    padding: 55px;
+    line-height: 50px;
+}
+
+.colonne a {
+    color: black;
+    text-decoration: none;
+}
+
+.colonne a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.reseauxSociaux a img {
+    margin-left: 30px;
+    width: 40px;
+}
+
+.footer img {
+    width: 400px;
+    margin-left: 0;
 }
 
 /* Cache le menu burger sur les écrans plus larges que 822px */
@@ -157,6 +194,104 @@ body {
         display: none;
     }
 
+}
+
+/*Footer responsive*/
+@media only screen and (max-width: 1340px) {
+
+    .colonne ul {
+        list-style-type: none;
+        padding: 22px;
+        line-height: 50px;
+    }
+
+    .reseauxSociaux a img {
+        margin-left: 30px;
+        width: 32px;
+    }
+    
+    .footer img {
+        width: 350px;
+        margin-left: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header img {
+        width: 280px;
+    }
+
+    .header-right {
+        padding: 26px 0;
+    }
+        
+    .header-right a {
+        padding: 9.5px;
+        font-size: 16px;
+    }
+    
+    .header a.contact:hover  {
+        border: 2px solid black;
+    }
+    
+    .contact-active {
+        border: 2px solid black;
+        margin-right: 17px;
+    }
+
+    .footer {
+        display: block;
+        justify-content: center;
+    }
+
+    .colonne ul {
+        list-style-type: none;
+        padding: 10px;
+        line-height: 45px;
+    }
+
+    .reseauxSociaux a img {
+        margin-left: 18px;
+        width: 30px;
+    }
+    
+    .footer img {
+        width: 280px;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 860px) {
+    
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        background-color: #E0E0E0;
+    }
+    
+    .liens {
+        display: block;
+        justify-content: block;
+    }
+
+    .colonneLiens {
+        display: block;
+        align-items: block;
+        margin-right: 30%;
+    }
+
+    .footer p {
+        display: flex;
+        justify-content:flex-end;
+        color: black;
+        font-size: 13px;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* Cache le header principal avec les liens pour les écrans plus petit que 822 px */
