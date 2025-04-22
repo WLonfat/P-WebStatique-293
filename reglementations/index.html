@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
-        
+        <script src="../script.js" defer></script>
         <link rel="icon" href="../Images/Logo-LonfDrone/Favicon/favicon.ico" sizes="any">
         <link rel="icon" type="favicon-32x32" href="../Images/Logo-LonfDrone/Favicon/favicon-32x32.png">
         <link rel="icon" type="apple-touch-icon" href="../Images/Logo-LonfDrone/Favicon/apple-touch-icon.png">
@@ -26,19 +26,37 @@
 
     <body>
 
-        <article>
-            
-            <header>
-                <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
+        <header class="header">
+
+            <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a>
+
+            <div class="header-right">
                 <a href="../index.html">Accueil</a>
-                <a href="../explorer/index.html">Explorer</a>
-                <a href="../reglementations/index.html" class="active">Réglementations</a>
+                <a href="../explorer/index.html" class="active">Explorer</a>
+                <a href="../reglementations/index.html">Réglementations</a>
                 <a href="../shop/index.html">Shop</a>
                 <a href="../faq/index.html">FAQ</a>
-                <a href="../contact/index.html"><button>Contact</button></a>
-            </header>
+                <a href="../contact/index.html" class="contact">Contact</a>
+            </div>
+
+            <a href="#" id="buttonOuvrir" class="burgerIcon"><img src="../Images/Header/Hamburger_icon.png"></a>
+
+            <div id="menuBurger" class="menuBurger">
+
+                <a href="#" id="buttonFermer" class="buttonFermer">x</a>
+
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../explorer/index.html">Explorer</a></li>
+                    <li><a href="../reglementations/index.html" class="active">Réglementations</a></li>
+                    <li><a href="../shop/index.html">Shop</a></li>
+                    <li><a href="../faq/index.html">FAQ</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+
+            </div>
             
-        </article>
+        </header>
 
         <section class="TitreReglementataions">
             <h1>Réglementations Européennes</h1><br>
