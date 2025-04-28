@@ -2,11 +2,17 @@
 <html lang="fr">
 
     <head>
+        <!--
+        Auteur      : William.L
+        Version     : 4.0
+        Date        : 25.04.2025
+        Description : Page "Shop" du site LonfDrone
+        -->
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
-        
+        <script src="../script.js" defer></script>
         <link rel="icon" href="../Images/Logo-LonfDrone/Favicon/favicon.ico" sizes="any">
         <link rel="icon" type="favicon-32x32" href="../Images/Logo-LonfDrone/Favicon/favicon-32x32.png">
         <link rel="icon" type="apple-touch-icon" href="../Images/Logo-LonfDrone/Favicon/apple-touch-icon.png">
@@ -20,19 +26,37 @@
 
     <body>
 
-        <article>
-            
-            <header>
-                <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
+        <header class="header">
+
+            <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a>
+
+            <div class="header-right">
                 <a href="../index.html">Accueil</a>
                 <a href="../explorer/index.html">Explorer</a>
                 <a href="../reglementations/index.html">Réglementations</a>
                 <a href="../shop/index.html" class="active">Shop</a>
                 <a href="../faq/index.html">FAQ</a>
-                <a href="../contact/index.html"><button>Contact</button></a>
-            </header>
+                <a href="../contact/index.html" class="contact">Contact</a>
+            </div>
+
+            <a onclick="ouvrirNav()" class="burgerIcon"><img src="../Images/Header/Hamburger_icon.png"></a>
+
+            <div id="menuBurger" class="menuBurger">
+
+                <a onclick="fermerNav()" class="buttonFermer">x</a>
+
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../explorer/index.html">Explorer</a></li>
+                    <li><a href="../reglementations/index.html">Réglementations</a></li>
+                    <li><a href="../shop/index.html" class="active">Shop</a></li>
+                    <li><a href="../faq/index.html">FAQ</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+
+            </div>
             
-        </article>
+        </header>
 
         <section class="TitreShop">
 
@@ -43,13 +67,13 @@
 
         </section>
 
-        <section class="Elements">
+        <section class="drones">
 
-            <article class="Drone">
+            <article class="drone" id="Neo">
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
-                    <h1 id="Neo">DJI Neo Fly More Combo</h1>
+                    <h1>DJI Neo Fly More Combo</h1>
                     <h2>278.-</h2>
 
                     <p>Le drone idéal pour des prises de vues en 4K, tout en étant ultra compact. Livré avec la protection d’hélice</p>
@@ -59,7 +83,7 @@
 
                 </article>
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
                     <img src="../Images/Shop/dji-neo-shop.jpg" alt="Pack DJI Neo">
 
@@ -67,17 +91,17 @@
 
             </article>
 
-            <article class="Drone">
+            <article class="drone" id="Mini4Pro">
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
                     <img src="../Images/Shop/dji-mini4pro-shop.jpg" alt="Pack DJI Mini 4 Pro Fly More Combo">
 
                 </article>
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
-                    <h1 id="Mini4Pro">DJI Mini 4 Pro Fly More Combo</h1>
+                    <h1>DJI Mini 4 Pro Fly More Combo</h1>
                     <h2>920.-</h2>
 
                     <p>Le drone pour photographier et filmer en 4K, tout en ayant la possibilité de faire du contenu en mode portrait.</p>
@@ -89,11 +113,11 @@
 
             </article>
 
-            <article class="Drone">
+            <article class="drone" id="Air3">
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
-                    <h1 id="Air3">DJI Air 3 Fly More Combo (RC-N2)</h1>
+                    <h1>DJI Air 3 Fly More Combo (RC-N2)</h1>
                     <h2>1037.-</h2>
 
                     <p>Le drone parfait pour ses prises de vues spéctaculaires, de loin comme de près. Performant et polyvalent.</p>
@@ -103,7 +127,7 @@
 
                 </article>
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
                     <img src="../Images/Shop/dji-air3-shop.jpg" alt="Pack DJI Air 3 Fly More Combo (RC-N2)">
 
@@ -111,17 +135,17 @@
 
             </article>
 
-            <article class="Drone">
+            <article class="drone" id="Mavic3Pro">
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
                     <img src="../Images/Shop/dji-mavic-3-pro-fly-more-combo-shop.jpg" alt="Pack DJI Neo">
 
                 </article>
 
-                <article class="DroneAlign">
+                <article class="droneAlign">
 
-                    <h1 id="Mavic3Pro">DJI Mavic 3 Pro Fly More Combo (DJI RC)</h1>
+                    <h1>DJI Mavic 3 Pro Fly More Combo (DJI RC)</h1>
                     <h2>2062.-</h2>
 
                     <p>Le drone parfait pour des prises de vues de très haute qualité. Idéal pour les photographes professionnels.</p>
@@ -135,13 +159,13 @@
 
         </section>
 
-        <section class="Elements">
+        <section class="accessoires" id="Accessoires">
 
-            <h1 id="Accessoires">Accessoires</h1>
+            <h1>Accessoires</h1>
 
-            <article class="Accessoire">
+            <article class="accessoire">
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <h1>DJI Jeu de filtres ND (ND 16/64/256)</h1>
                     <h2>49.90.-</h2>
@@ -152,7 +176,7 @@
 
                 </article>
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <img src="../Images/Shop/Filtres-DJI-Mini4Pro.jpg" alt="Image du jeu de filtre ND du drone DJI Mini 4 Pro">
 
@@ -160,9 +184,9 @@
 
             </article>
 
-            <article class="Accessoire">
+            <article class="accessoire">
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <h1>Pgytech Piste d'atterrissage moyenne</h1>
                     <h2>17.30.-</h2>
@@ -173,7 +197,7 @@
 
                 </article>
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <img src="../Images/Shop/Piste-atterrissage-pgytech.jpg" alt="Image de la piste d'atterrissage moyenne Pgytech">
 
@@ -181,9 +205,9 @@
 
             </article>
 
-            <article class="Accessoire">
+            <article class="accessoire">
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <h1>DJI Batterie de vol intelligente Air 3</h1>
                     <h2>155.90.-</h2>
@@ -194,7 +218,7 @@
 
                 </article>
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <img src="../Images/Shop/Batterie-DJI-Air3.jpg" alt="Image de la batterie intelligente du drone DJI Air 3">
 
@@ -202,9 +226,9 @@
 
             </article>
 
-            <article class="Accessoire">
+            <article class="accessoire">
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <h1>Protection d'hélice DJI Neo</h1>
                     <h2>10.40-</h2>
@@ -217,7 +241,7 @@
 
                 </article>
 
-                <article class="AccessoireAlign">
+                <article class="accessoireAlign">
 
                     <img src="../Images/Shop/Protection-helices-DJI-Neo.jpg" alt="Image de la protection d'helice du drone DJI Neo">
 
@@ -227,56 +251,72 @@
 
         </section>
 
-        <footer>
+        <footer class="footer">
 
-            <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
-
-            <div class="ReseauxSociaux">
-                <a href="https://www.instagram.com/etmlausanne/"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
-                <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
-                <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
-                <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
-                <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+            <div class="liens">
+    
+                <div>
+    
+                    <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a><br></br>
+    
+                    <div class="reseauxSociaux">
+                        <a href="https://www.instagram.com/etmlausanne/" class="premier"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
+                        <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
+                        <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
+                        <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
+                        <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+                    </div>
+    
+                </div>
+    
+                <div class="colonneLiens">
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../explorer/index.html"><b>Explorer</b></a></li>
+                            <li><a href="../explorer/index.html#Neo">DJI Neo</a></li>
+                            <li><a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
+                            <li><a href="../explorer/index.html#Air3">DJI Air 3</a></li>
+                            <li><a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../reglementations/index.html"><b>Réglementations</b></a></li>
+                            <li><a href="../reglementations/index.html#CatOuverte">Catégorie Ouverte</a></li>
+                            <li><a href="../reglementations/index.html#CatSpecifique">Catégorie Spécifique</a></li>
+                            <li><a href="../reglementations/index.html#CatCertifiee">Catégorie Certifiée</a></li>
+                            <li><a href="../reglementations/index.html#Classes-C0-C6">Classes C0 - C6</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="#"><b>Shop</b></a></li>
+                            <li><a href="#Neo">DJI Neo</a></li>
+                            <li><a href="#Mini4Pro">DJI Mini 4 Pro</a></li>
+                            <li><a href="#Air3">DJI Air 3</a></li>
+                            <li><a href="#Mavic3Pro">DJI Mavic 3 Pro</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../contact/index.html"><b>Contact</b></a></li>
+                            <li><a href="../faq/index.html">FAQ</a></li>
+                            <li><a href="#Accessoires">Accessoires</a></li>
+                            <li><a href="../auteur/index.html">Auteur du site</a></li>
+                            <li><a href="../mentions-legales/index.html">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
             </div>
-        
-            <div class="Colonneliens">
-
-                <div class="colonne">
-                    <a href="../explorer/index.html">Explorer</a>
-                    <a href="../explorer/index.html#Neo">DJI Neo</a>
-                    <a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a>
-                    <a href="../explorer/index.html#Air3">DJI Air 3</a>
-                    <a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="../reglementations/index.html">Réglementations</a>
-                    <a href="../reglementations/index.html#CatOuverte">Catégorie Ouverte</a>
-                    <a href="../reglementations/index.html#CatSpecifique">Catégorie Spécifique</a>
-                    <a href="../reglementations/index.html#CatCertifiee">Catégorie Certifiée</a>
-                    <a href="../reglementations/index.html#Classes-C0-C6">Classes C0 - C6</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="#">Shop</a>
-                    <a href="#Neo">DJI Neo</a>
-                    <a href="#Mini4Pro">DJI Mini 4 Pro</a>
-                    <a href="#Air3">DJI Air 3</a>
-                    <a href="#Mavic3Pro">DJI Mavic 3 Pro</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="#Accessoires">Accessoires</a>
-                    <a href="../faq/index.html">FAQ</a>
-                    <a href="../contact/index.html">Contact</a>
-                    <a href="../auteur/index.html">Auteur du site</a>
-                    <a href="../mentions-legales/index.html">Mentions Légales</a>
-                </div>
-
-            </div>
-
+    
             <p>Copyright © 2025 LonfDrone. Tous droits réservés.</p>
-
+    
         </footer>
 
     </body>

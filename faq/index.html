@@ -2,11 +2,17 @@
 <html lang="fr">
 
     <head>
+        <!--
+        Auteur      : William.L
+        Version     : 4.0
+        Date        : 23.04.2025
+        Description : Page "FAQ" du site LonfDrone
+        -->
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
-        
+        <script src="../script.js" defer></script>
         <link rel="icon" href="../Images/Logo-LonfDrone/Favicon/favicon.ico" sizes="any">
         <link rel="icon" type="favicon-32x32" href="../Images/Logo-LonfDrone/Favicon/favicon-32x32.png">
         <link rel="icon" type="apple-touch-icon" href="../Images/Logo-LonfDrone/Favicon/apple-touch-icon.png">
@@ -20,91 +26,129 @@
 
     <body>
 
-        <article>
-            
-            <header>
-                <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
+        <header class="header">
+
+            <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a>
+
+            <div class="header-right">
                 <a href="../index.html">Accueil</a>
                 <a href="../explorer/index.html">Explorer</a>
                 <a href="../reglementations/index.html">Réglementations</a>
                 <a href="../shop/index.html">Shop</a>
                 <a href="../faq/index.html" class="active">FAQ</a>
-                <a href="../contact/index.html"><button>Contact</button></a>
-            </header>
+                <a href="../contact/index.html" class="contact">Contact</a>
+            </div>
+
+            <a onclick="ouvrirNav()" class="burgerIcon"><img src="../Images/Header/Hamburger_icon.png"></a>
+
+            <div id="menuBurger" class="menuBurger">
+
+                <a onclick="fermerNav()" class="buttonFermer">x</a>
+
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../explorer/index.html">Explorer</a></li>
+                    <li><a href="../reglementations/index.html">Réglementations</a></li>
+                    <li><a href="../shop/index.html">Shop</a></li>
+                    <li><a href="../faq/index.html" class="active">FAQ</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+
+            </div>
             
-        </article>
+        </header>
 
-        <h1>FAQ</h1>
-        <p>Nous répoondons à vos questions !</p>
+        <div class="faq">
 
-        <h2>Est ce que je peux acheter le drone sans le pack Fly More ?</h2>
-        <p>Oui, il est tout à fait possible d'acheter uniquement le drone ! Vous pouvez nous contacter avec le <a href="../contact/index.html">formulaire de contact</a> pour pouvoir avoir accès aux prix et à la disponibilité du produit.</p>
+            <br></br><h1>FAQ</h1>
+            <h3>Nous répondons à vos questions !</h3><br>
 
-        <h2>Ai-je la possibilité de retourner le produit et de me faire rembourser ?</h2>
-        <p>Oui, il est tout à fait possible de nous faire parvenir le produit si il est défectueux. Nous reprenons uniquement les articles déballés mais pas activés. Vous recevrez ensuite l’argent via le même moyen qu’au paiement.</p>
+            <h2>Est ce que je peux acheter le drone sans le pack Fly More ?</h2>
+            <p>Oui, il est tout à fait possible d'acheter uniquement le drone ! Vous pouvez nous contacter avec le <a href="../contact/index.html">formulaire de contact</a> pour pouvoir avoir accès aux prix et à la disponibilité du produit.</p><br></br>
 
-        <h2>Quand est ce que je vais recevoir ma commande ?</h2>
-        <p>Sous 5 à 7 jours ouvrable, sans compter les jours fériés. La commande sera livrée par DPD, FedEx ou la poste.</p>
+            <h2>Ai-je la possibilité de retourner le produit et de me faire rembourser ?</h2>
+            <p>Oui, il est tout à fait possible de nous faire parvenir le produit si il est défectueux. Nous reprenons uniquement les articles déballés mais pas activés. Vous recevrez ensuite l’argent via le même moyen qu’au paiement.</p><br></br>
 
-        <h2>Est ce que je pourrais acheter d’autres drones ou d'autres accessoires  ?</h2>
-        <p>Oui, il est tout à fait possible d'acheter d’autres accessoires pour drone (ou d’autres drones qui ne sont pas dans la boutique.) Les éléments qui ne sont pas affichés est du au manque de stock, mais vous pouvez toujours nous contacter pour un renseignement !</p>
+            <h2>Quand est ce que je vais recevoir ma commande ?</h2>
+            <p>Sous 5 à 7 jours ouvrable, sans compter les jours fériés. La commande sera livrée par DPD, FedEx ou la poste.</p><br></br>
 
-        <h2>Quel moyens de paiement acceptez-vous ?</h2>
-        <p>Nous acceptons différents mode de paiement : Carte de crédit ou débit Mastercard, PayPal, Apple et Google Pay, Visa et American Express.</p>
+            <h2>Est ce que je pourrais acheter d’autres drones ou d'autres accessoires  ?</h2>
+            <p>Oui, il est tout à fait possible d'acheter d’autres accessoires pour drone (ou d’autres drones qui ne sont pas dans la boutique.) Les éléments qui ne sont pas affichés est du au manque de stock, mais vous pouvez toujours nous contacter pour un renseignement !</p><br></br>
 
-        <h2>Vous avez d'autres questions ?</h2>
-        <p>Contactez-nous via le <a href="../contact/index.html">formulaire de contact</a>, ou envoyez nous un email !  <a href="mailto:contact@lonfdrone.com">contact@lonfdrone.com</a></p>
+            <h2>Quel moyens de paiement acceptez-vous ?</h2>
+            <p>Nous acceptons différents mode de paiement : Carte de crédit ou débit Mastercard, PayPal, Apple et Google Pay, Visa et American Express.</p><br></br>
 
-        <footer>
+            <h4>Vous avez d'autres questions ?</h4>
+            <p class="center">Contactez-nous via le <a href="../contact/index.html">formulaire de contact</a>, ou envoyez nous un email !  <a href="mailto:contact@lonfdrone.com">contact@lonfdrone.com</a></p><br></br>
 
-            <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
+        </div>
 
-            <div class="ReseauxSociaux">
-                <a href="https://www.instagram.com/etmlausanne/"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
-                <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
-                <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
-                <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
-                <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+        <footer class="footer">
+
+            <div class="liens">
+    
+                <div>
+    
+                    <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a><br></br>
+    
+                    <div class="reseauxSociaux">
+                        <a href="https://www.instagram.com/etmlausanne/" class="premier"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
+                        <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
+                        <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
+                        <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
+                        <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+                    </div>
+    
+                </div>
+    
+                <div class="colonneLiens">
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../explorer/index.html"><b>Explorer</b></a></li>
+                            <li><a href="../explorer/index.html#Neo">DJI Neo</a></li>
+                            <li><a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
+                            <li><a href="../explorer/index.html#Air3">DJI Air 3</a></li>
+                            <li><a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../reglementations/index.html"><b>Réglementations</b></a></li>
+                            <li><a href="../reglementations/index.html#CatOuverte">Catégorie Ouverte</a></li>
+                            <li><a href="../reglementations/index.html#CatSpecifique">Catégorie Spécifique</a></li>
+                            <li><a href="../reglementations/index.html#CatCertifiee">Catégorie Certifiée</a></li>
+                            <li><a href="../reglementations/index.html#Classes-C0-C6">Classes C0 - C6</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../shop/index.html"><b>Shop</b></a></li>
+                            <li><a href="../shop/index.html#Neo">DJI Neo</a></li>
+                            <li><a href="../shop/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
+                            <li><a href="../shop/index.html#Air3">DJI Air 3</a></li>
+                            <li><a href="../shop/index.html#Mavic3Pro">DJI Mavic 3 Pro</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../contact/index.html"><b>Contact</b></a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="../shop/index.html#Accessoires">Accessoires</a></li>
+                            <li><a href="../auteur/index.html">Auteur du site</a></li>
+                            <li><a href="../mentions-legales/index.html">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
             </div>
-        
-            <div class="Colonneliens">
-
-                <div class="colonne">
-                    <a href="../explorer/index.html">Explorer</a>
-                    <a href="../explorer/index.html#Neo">DJI Neo</a>
-                    <a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a>
-                    <a href="../explorer/index.html#Air3">DJI Air 3</a>
-                    <a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="../reglementations/index.html">Réglementations</a>
-                    <a href="../reglementations/index.html#CatOuverte">Catégorie Ouverte</a>
-                    <a href="../reglementations/index.html#CatSpecifique">Catégorie Spécifique</a>
-                    <a href="../reglementations/index.html#CatCertifiee">Catégorie Certifiée</a>
-                    <a href="../reglementations/index.html#Classes-C0-C6">Classes C0 - C6</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="../shop/index.html">Shop</a>
-                    <a href="../shop/index.html#Neo">DJI Neo</a>
-                    <a href="../shop/index.html#Mini4Pro">DJI Mini 4 Pro</a>
-                    <a href="../shop/index.html#Air3">DJI Air 3</a>
-                    <a href="../shop/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="../shop/index.html#Accessoires">Accessoires</a>
-                    <a href="#">FAQ</a>
-                    <a href="../contact/index.html">Contact</a>
-                    <a href="../auteur/index.html">Auteur du site</a>
-                    <a href="../mentions-legales/index.html">Mentions Légales</a>
-                </div>
-
-            </div>
-
+    
             <p>Copyright © 2025 LonfDrone. Tous droits réservés.</p>
-
+    
         </footer>
 
     </body>

@@ -2,11 +2,17 @@
 <html lang="fr">
 
     <head>
+        <!--
+        Auteur      : William.L
+        Version     : 4.0
+        Date        : 25.04.2025
+        Description : Page "Réglementations" du site LonfDrone
+        -->
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
-        
+        <script src="../script.js" defer></script>
         <link rel="icon" href="../Images/Logo-LonfDrone/Favicon/favicon.ico" sizes="any">
         <link rel="icon" type="favicon-32x32" href="../Images/Logo-LonfDrone/Favicon/favicon-32x32.png">
         <link rel="icon" type="apple-touch-icon" href="../Images/Logo-LonfDrone/Favicon/apple-touch-icon.png">
@@ -20,258 +26,332 @@
 
     <body>
 
-        <article>
-            
-            <header>
-                <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
+        <header class="header">
+
+            <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a>
+
+            <div class="header-right">
                 <a href="../index.html">Accueil</a>
                 <a href="../explorer/index.html">Explorer</a>
                 <a href="../reglementations/index.html" class="active">Réglementations</a>
                 <a href="../shop/index.html">Shop</a>
                 <a href="../faq/index.html">FAQ</a>
-                <a href="../contact/index.html"><button>Contact</button></a>
-            </header>
-            
-        </article>
-
-        <section class="TitreReglementataions">
-            <h1>Réglementations Européennes</h1><br>
-            <p>Nous répoondons à vos questions sur les réglementations et les difféentes règles en vigueur en Europe.</p><br>
-            <img src="../Images/Reglementations/reglementation-europeenne-drone.png">
-        </section>
-
-        <h2>Les différentes catégories :</h2>
-
-        <section class="Categories">
-
-            <article class="Categorie">
-
-                <article class="CategorieAlign">
-
-                    <h2 id="CatOuverte">Ouverte</h2>
-
-                    <p>Aucune autorisation de <a href= "https://www.bazl.admin.ch/bazl/fr/home/drohnen.html">l’OFAC</a> (l'Office Fédérale de l'Aviation Civile) n’est requise, car cette catégorie est utilisée pour classer les drones à faible risque. 
-                       (Tout les drones commerciaux que l’on peut trouver) Cette catégorie comprend trois sous-catégories :
-                    </p>
-        
-                    <ul>
-                        <li>A1 : Survoler les gens mais pas les rassemblements de personnes</li>
-                        <li>A2 : Voler à proximité des gens</li>
-                        <li>A3 : Voler loin des gens</li>
-                    </ul>
-
-                </article>
-
-                <article class="CategorieAlign">
-                    <img src="../Images/Reglementations/categorie-ouverte.jpg">
-                </article>
-
-
-                <article class="CategorieAlign">
-
-                    <h2 id="CatSpecifique">Spécifique</h2>
-
-                    <p>Une autorisation est nécessaire si des règles « ouvertes » ne sont pas suivies ou si le poids du drone dépasse 25 kg.
-                       Exploiter cette catégorie amène à prendre des risques modérés et nécessite donc une autorisation de vol ou une déclaration. 
-                       Il est possible que les risques soient analysés avant le vol.
-                    </p>
-
-                </article>
-
-                <article class="CategorieAlign">
-                    <img src="../Images/Reglementations/categorie-specifique.jpg">
-                </article>
-
-                <article class="CategorieAlign">
-
-                    <h2 id="CatCertifiee">Certifiée</h2>
-
-                    <p>Une autorisation est obligatoire et le drone doit être certifié l’EASA. (European Union Aviation Safety Agency)
-                       Cette catégorie est très peu utilisée et est utilisée dans quelques circonstances comme les vols pratiqués au-dessus de rassemblement de personnes, 
-                       le transport de personne, ou le transport de matières dangereuses.
-                    </p>
-
-                </article>
-
-                <article class="CategorieAlign">
-                    <img src="../Images/Reglementations/categorie-certifiee.png">
-                </article>
-
-            </article>
-            
-        </section>
-
-        <section class="Classes">
-
-            <div class="Classe">
-                <img src="../Images/Reglementations/classes-drone-c0-c6.png">
+                <a href="../contact/index.html" class="contact">Contact</a>
             </div>
 
-            <div class="Classe">
-                <h2 id="Classes-C0-C6">Les différentes classes</h2>
-                <p>Les drones sont classés en sept catégories depuis la réglementation européenne harmonisée en 2020 par <a href= "https://www.easa.europa.eu/en/domains/civil-drones">l'EASA</a> (European Union Aviation Safety Agency) : C0, C1, C2, C3, C4, C5 et C6. 
-                   (Les drones de catégories C5 et C6 sont destinés aux opérations en catégorie spécifique, qui nécessitent une évaluation approfondie des risques et une  autorisation de l’autorité compétente. 
-                   Ces drones répondent à des  exigences techniques strictes pour des missions spécialisées.) Les caractéristiques techniques de chaque drone peuvent être précisément définies grâce à cette classification, 
-                   ainsi que les conditions d'utilisation et les exigences pour les télépilotes. L'objectif de ces règles est de garantir la protection des utilisateurs, des tiers et de l'espace aérien.</p>
-            </div>
+            <a onclick="ouvrirNav()" class="burgerIcon"><img src="../Images/Header/Hamburger_icon.png"></a>
 
-            <div class="Classe" id="ClasseC0">
+            <div id="menuBurger" class="menuBurger">
 
-                <h2>Classe C0</h2>
-                <ol>
-                    <li>Poids maximal : moins de 250 grammes.</li>
-                    <li>Utilisation : vols autorisés au-dessus de personnes isolées, bien que cela soit déconseillé.</li>
-                    <li>Exigences pour le télépilote : aucune formation obligatoire. Toutefois, suivre la formation en ligne OPEN A1/A3 est recommandé pour une utilisation sécurisée.</li>
-                    <li>Exemple d'appareils : mini-drones de loisir, comme le <a href="../explorer/index.html#Neo">DJI Neo</a> ou le <a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
-                </ol>
+                <a onclick="fermerNav()" class="buttonFermer">x</a>
 
-            </div>
-
-            <div class="Classe" id="ClasseC1">
-
-                <h2>Classe C1</h2>
-                <ol>
-                    <li>Poids maximal : moins de 900 grammes.</li>
-                    <li>Utilisation : vols à proximité des personnes, mais sans survol direct.</li>
-                    <li>Exigences pour le télépilote : formation en ligne et réussite de l’examen OPEN A1/A3.</li>
-                    <li>Exemple d'appareils : drones grand public comme le <a href="../explorer/index.html#Air3">DJI Air 3</a>.</li>
-                </ol>
-                
-            </div>
-
-            <div class="Classe" id="ClasseC2">
-
-                <h2>Classe C2</h2>
-                <ol>
-                    <li>Poids maximal : moins de 4 kilogrammes.</li>
-                    <li>Utilisation : nécessite de maintenir une distance minimale de 30 mètres des personnes  non impliquées (réductible à 5 mètres en mode basse vitesse).</li>
-                    <li>Exigences pour le télépilote : obtention du Brevet d'Aptitude de Pilote à Distance (BAPD), incluant une formation théorique et pratique.</li>
-                    <li>Exemple d'appareils : drones professionnels compacts, comme le <a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>.</li>
-                </ol>
-                
-            </div>
-
-            <div class="Classe" id="ClasseC3">
-
-                <h2>Classe C3</h2>
-                <ol>
-                    <li>Poids maximal : moins de 25 kilogrammes.</li>
-                    <li>Utilisation : vols uniquement dans des zones dégagées, avec une distance minimale de  150 mètres des zones résidentielles, commerciales ou industrielles.</li>
-                    <li>Exigences pour le télépilote : formation en ligne et examen OPEN A1/A3.</li>
-                    <li>Exemple d'appareils : drones pour la cartographie et la photogrammétrie.</li>
-                </ol>
-                
-            </div>
-
-            <div class="Classe" id="ClasseC4">
-
-                <h2>Classe C4</h2>
-                <ol>
-                    <li>Poids maximal : moins de 25 kilogrammes.</li>
-                    <li>Particularité : drones sans fonctions automatisées, souvent destinés à l’aéromodélisme.</li>
-                    <li>Utilisation : similaires à la catégorie C3, avec des restrictions d’espace.</li>
-                    <li>Exigences pour le télépilote : formation en ligne et examen OPEN A1/A3.</li>
-                </ol>
-                
-            </div>
-
-            <div class="Classe" id="ClasseC5">
-
-                <h2>Classe C5 (Cat. Spécifique)</h2>
-                <ol>
-                    <li>Poids maximal : moins de 25 kilogrammes.</li>
-                    <li>Utilisation : compatible avec le scénario standard STS-01 (vols à vue en zone peuplée ou non peuplée).</li>
-                    <li>Exigences pour le télépilote : certificat CATS (Certificat d'Aptitude Théorique de Pilote à Distance) et formation pratique spécifique.</li>
-                    <li>Applications : surveillance industrielle, missions d’inspection en milieu urbain.</li>
-                </ol>
-                
-            </div>
-
-            <div class="Classe" id="ClasseC6">
-
-                <h2>Classe C6 (Cat. Spécifique)</h2>
-                <ol>
-                    <li>Poids maximal : moins de 250 grammes.</li>
-                    <li>Utilisation : adapté au scénario standard STS-02 (vols hors vue en zone non peuplée).</li>
-                    <li>Exigences pour le télépilote : certificat CATS et formation pratique spécifique.</li>
-                    <li>Applications : cartographie étendue, agriculture de précision, transport de charges légères.</li><br></br>
-                </ol>
-                
-            </div>
-
-            <div class="Classe">
-
-                <h2>Les différents liens utiles :</h2>
                 <ul>
-                    <li><a href="../documents/Guide_categorie_Ouverte.pdf">Guide Français de la catégorie ouverte (valable pour la Suisse)</a></li><br>
-                    <li><a href="https://map.geo.admin.ch/?layers=ch.bazl.einschraenkungen-drohnen&lang=fr">Carte géographique Suisse des restrictions et autorisations de vol</a></li><br>
-                    <li><a href="https://www.geoportail.gouv.fr/donnees/restrictions-uas-categorie-ouverte-et-aeromodelisme">Carte géographique Française des restrictions et autorisations de vol</a></li><br>
-                    <li><a href="../documents/easa_c0_without_camera_fr_v2.pdf">Guide de la classe C0 sans caméra FR (EASA)</a></li><br>
-                    <li><a href="../documents/easa_c0_with_camera_fr_v2.pdf">Guide de la classe C0 avec caméra FR (EASA)</a></li><br>
-                    <li><a href="../documents/easa_c1_fr_v2.pdf">Guide de la classe C1 FR (EASA)</a></li><br>
-                    <li><a href="../documents/easa_c2_with_low_speed_mode_fr_v2.pdf">Guide de la classe C2 en mode basse vitesse FR (EASA)</a></li><br>
-                    <li><a href="../documents/easa_c2_without_low_speed_mode_fr_v2.pdf">Guide de la classe C2 FR (EASA)</a></li><br>
-                    <li><a href="../documents/easa_c3_fr_v2.pdf">Guide de la classe C3 FR (EASA)</a></li><br>
-                    <li><a href="../documents/easa_c4_fr.pdf">Guide de la classe C4 FR (EASA)</a></li><br>
-                    <li><a href="../documents/223230_EASA_C5%20revised.pdf">Guide de la classe C5 EN (EASA)</a></li><br>
-                    <li><a href="../documents/223230_EASA_C6%20revised.pdf">Guide de la classe C6 EN (EASA)</a></li><br>
-                    <li><a href="../videos/campagne-dinformation-sur-les-drones-2021-fr.mp4">Vidéo de prévention | Campagne d'information sur les drones</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../explorer/index.html">Explorer</a></li>
+                    <li><a href="../reglementations/index.html" class="active">Réglementations</a></li>
+                    <li><a href="../shop/index.html">Shop</a></li>
+                    <li><a href="../faq/index.html">FAQ</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
-                
-            </div>
 
+            </div>
+            
+        </header>
+
+        <section class="reglementations">
+
+            <section class="titreReglementations">
+                <h1>Réglementations Européennes</h1>
+                <h2>On vous explique les réglementations et les différentes règles en vigueur sur les drones en Europe.</h2><br>
+                <img src="../Images/Reglementations/reglementation-europeenne-drone.png">
+            </section>
+    
+            <h2>Les différentes catégories :</h2>
+    
+            <section class="categories">
+    
+                <article class="categorieAlign" id="CatOuverte">
+    
+                    <article class="categorie">
+    
+                        <h3>Ouverte</h3>
+    
+                        <p>Aucune autorisation de <a href= "https://www.bazl.admin.ch/bazl/fr/home/drohnen.html">l’OFAC</a> (l'Office Fédérale de l'Aviation Civile) n’est requise, car cette catégorie est utilisée pour classer les drones à faible risque. 
+                           (Tout les drones commerciaux que l’on peut trouver) Cette catégorie comprend trois sous-catégories :
+                        </p>
+            
+                        <ul>
+                            <li>A1 : Survoler les gens mais pas les rassemblements de personnes</li>
+                            <li>A2 : Voler à proximité des gens</li>
+                            <li>A3 : Voler loin des gens</li>
+                        </ul>
+    
+                    </article><br>
+    
+                    <article class="categorie categorieImage">
+                        <img src="../Images/Reglementations/categorie-ouverte.jpg">
+                    </article>
+                
+                </article>
+    
+                <article class="categorieAlign" id="CatSpecifique">
+                
+                    <article class="categorie">
+    
+                        <h3>Spécifique</h3>
+    
+                        <p>Une autorisation est nécessaire si des règles « ouvertes » ne sont pas suivies ou si le poids du drone dépasse 25 kg.
+                           Exploiter cette catégorie amène à prendre des risques modérés et nécessite donc une autorisation de vol ou une déclaration. 
+                           Il est possible que les risques soient analysés avant le vol.
+                        </p>
+    
+                    </article><br>
+    
+                    <article class="categorie categorieImage">
+                        <img src="../Images/Reglementations/categorie-specifique.jpg">
+                    </article>
+    
+                </article>
+    
+                <article class="categorieAlign" id="CatCertifiee">
+    
+                    <article class="categorie">
+    
+                        <h3>Certifiée</h3>
+    
+                        <p>Une autorisation est obligatoire et le drone doit être certifié l’EASA. (European Union Aviation Safety Agency)
+                           Cette catégorie est très peu utilisée et est utilisée dans quelques circonstances comme les vols pratiqués au-dessus de rassemblement de personnes, 
+                           le transport de personne, ou le transport de matières dangereuses.
+                        </p>
+    
+                    </article><br>
+    
+                    <article class="categorie categorieImage">
+                        <img src="../Images/Reglementations/categorie-certifiee.png">
+                    </article>
+    
+                </article>
+                
+            </section>
+    
+            <section class="classes" id="Classes-C0-C6"><br></br>
+
+                <article class="classesAlign">
+
+                    <article class="classeC classesImage">
+                        <img src="../Images/Reglementations/classes-drone-c0-c6.png">
+                    </article>
+
+                    <article class="classeC">
+
+                        <h3>Les différentes classes</h3>
+                        
+                        <p>Les drones sont classés en sept catégories depuis la réglementation européenne harmonisée en 2020 par <a href= "https://www.easa.europa.eu/en/domains/civil-drones">l'EASA</a> (European Union Aviation Safety Agency) : C0, C1, C2, C3, C4, C5 et C6. 
+                            (Les drones de catégories C5 et C6 sont destinés aux opérations en catégorie spécifique, qui nécessitent une évaluation approfondie des risques et une  autorisation de l’autorité compétente. 
+                            Ces drones répondent à des  exigences techniques strictes pour des missions spécialisées.) Les caractéristiques techniques de chaque drone peuvent être précisément définies grâce à cette classification, 
+                            ainsi que les conditions d'utilisation et les exigences pour les télépilotes. L'objectif de ces règles est de garantir la protection des utilisateurs, des tiers et de l'espace aérien.
+                        </p>
+    
+                    </article>
+
+                </article>
+            
+                <article class="classesAlign">
+
+                    <article class="classeC espace" id="ClasseC0">
+    
+                        <h3>Classe C0</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 250 grammes.</li>
+                            <li>Utilisation : vols autorisés au-dessus de personnes isolées, bien que cela soit déconseillé.</li>
+                            <li>Exigences pour le télépilote : aucune formation obligatoire. Toutefois, suivre la formation en ligne OPEN A1/A3 est recommandé pour une utilisation sécurisée.</li>
+                            <li>Exemple d'appareils : mini-drones de loisir, comme le <a href="../explorer/index.html#Neo">DJI Neo</a> ou le <a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
+                        </ol>
+        
+                    </article>
+
+                    <article class="classeC" id="ClasseC1">
+    
+                        <h3>Classe C1</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 900 grammes.</li>
+                            <li>Utilisation : vols à proximité des personnes, mais sans survol direct.</li>
+                            <li>Exigences pour le télépilote : formation en ligne et réussite de l’examen OPEN A1/A3.</li>
+                            <li>Exemple d'appareils : drones grand public comme le <a href="../explorer/index.html#Air3">DJI Air 3</a>.</li>
+                        </ol>
+                        
+                    </article>
+
+                </article>
+
+                <article class="classesAlign">
+
+                    <article class="classeC espace" id="ClasseC2">
+    
+                        <h3>Classe C2</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 4 kilogrammes.</li>
+                            <li>Utilisation : nécessite de maintenir une distance minimale de 30 mètres des personnes  non impliquées (réductible à 5 mètres en mode basse vitesse).</li>
+                            <li>Exigences pour le télépilote : obtention du Brevet d'Aptitude de Pilote à Distance (BAPD), incluant une formation théorique et pratique.</li>
+                            <li>Exemple d'appareils : drones professionnels compacts, comme le <a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>.</li>
+                        </ol>
+                        
+                    </article>
+
+                    <article class="classeC" id="ClasseC3">
+    
+                        <h3>Classe C3</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 25 kilogrammes.</li>
+                            <li>Utilisation : vols uniquement dans des zones dégagées, avec une distance minimale de  150 mètres des zones résidentielles, commerciales ou industrielles.</li>
+                            <li>Exigences pour le télépilote : formation en ligne et examen OPEN A1/A3.</li>
+                            <li>Exemple d'appareils : drones pour la cartographie et la photogrammétrie.</li>
+                        </ol>
+                        
+                    </article>
+
+                </article>
+
+                <article class="classesAlign">
+
+                    <article class="classeC espace" id="ClasseC4">
+    
+                        <h3>Classe C4</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 25 kilogrammes.</li>
+                            <li>Particularité : drones sans fonctions automatisées, souvent destinés à l’aéromodélisme.</li>
+                            <li>Utilisation : similaires à la catégorie C3, avec des restrictions d’espace.</li>
+                            <li>Exigences pour le télépilote : formation en ligne et examen OPEN A1/A3.</li>
+                        </ol>
+                        
+                    </article>
+
+                    <article class="classeC" id="ClasseC5">
+    
+                        <h3>Classe C5 (Cat. Spécifique)</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 25 kilogrammes.</li>
+                            <li>Utilisation : compatible avec le scénario standard STS-01 (vols à vue en zone peuplée ou non peuplée).</li>
+                            <li>Exigences pour le télépilote : certificat CATS (Certificat d'Aptitude Théorique de Pilote à Distance) et formation pratique spécifique.</li>
+                            <li>Applications : surveillance industrielle, missions d’inspection en milieu urbain.</li>
+                        </ol>
+                        
+                    </article>
+
+                </article>
+
+                <article class="classesAlign">
+
+                    <article class="classeC" id="ClasseC6">
+    
+                        <h3>Classe C6 (Cat. Spécifique)</h3>
+                        <ol>
+                            <li>Poids maximal : moins de 250 grammes.</li>
+                            <li>Utilisation : adapté au scénario standard STS-02 (vols hors vue en zone non peuplée).</li>
+                            <li>Exigences pour le télépilote : certificat CATS et formation pratique spécifique.</li>
+                            <li>Applications : cartographie étendue, agriculture de précision, transport de charges légères.</li><br></br>
+                        </ol>
+                        
+                    </article>
+
+                </article>
+
+                <article class="classesAlign">
+
+                    <article class="classeC">
+    
+                        <h3>Les différents liens utiles :</h3>
+                        <ul>
+                            <li><a href="../documents/Guide_categorie_Ouverte.pdf">Guide Français de la catégorie ouverte (valable pour la Suisse)</a></li><br>
+                            <li><a href="https://map.geo.admin.ch/?layers=ch.bazl.einschraenkungen-drohnen&lang=fr">Carte géographique Suisse des restrictions et autorisations de vol</a></li><br>
+                            <li><a href="https://www.geoportail.gouv.fr/donnees/restrictions-uas-categorie-ouverte-et-aeromodelisme">Carte géographique Française des restrictions et autorisations de vol</a></li><br>
+                            <li><a href="../documents/easa_c0_without_camera_fr_v2.pdf">Guide de la classe C0 sans caméra FR (EASA)</a></li><br>
+                            <li><a href="../documents/easa_c0_with_camera_fr_v2.pdf">Guide de la classe C0 avec caméra FR (EASA)</a></li><br>
+                            <li><a href="../documents/easa_c1_fr_v2.pdf">Guide de la classe C1 FR (EASA)</a></li><br>
+                            <li><a href="../documents/easa_c2_with_low_speed_mode_fr_v2.pdf">Guide de la classe C2 en mode basse vitesse FR (EASA)</a></li><br>
+                            <li><a href="../documents/easa_c2_without_low_speed_mode_fr_v2.pdf">Guide de la classe C2 FR (EASA)</a></li><br>
+                            <li><a href="../documents/easa_c3_fr_v2.pdf">Guide de la classe C3 FR (EASA)</a></li><br>
+                            <li><a href="../documents/easa_c4_fr.pdf">Guide de la classe C4 FR (EASA)</a></li><br>
+                            <li><a href="../documents/223230_EASA_C5%20revised.pdf">Guide de la classe C5 EN (EASA)</a></li><br>
+                            <li><a href="../documents/223230_EASA_C6%20revised.pdf">Guide de la classe C6 EN (EASA)</a></li><br>
+                            <li><a href="../videos/campagne-dinformation-sur-les-drones-2021-fr.mp4">Vidéo de prévention | Campagne d'information sur les drones</a></li>
+                        </ul>
+                        
+                    </article>
+
+                </article>
+
+            </section>
+    
         </section>
 
-        <footer>
+        <footer class="footer">
 
-            <a href="../index.html"><img src="../Images/Logo-LonfDrone/LonfDrone-footer-black.png" width= "10%" alt="Logo-LonfDrone"></a>
-
-            <div class="ReseauxSociaux">
-                <a href="https://www.instagram.com/etmlausanne/"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
-                <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
-                <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
-                <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
-                <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+            <div class="liens">
+    
+                <div>
+    
+                    <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a><br></br>
+    
+                    <div class="reseauxSociaux">
+                        <a href="https://www.instagram.com/etmlausanne/" class="premier"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
+                        <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
+                        <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
+                        <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
+                        <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+                    </div>
+    
+                </div>
+    
+                <div class="colonneLiens">
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../explorer/index.html"><b>Explorer</b></a></li>
+                            <li><a href="../explorer/index.html#Neo">DJI Neo</a></li>
+                            <li><a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
+                            <li><a href="../explorer/index.html#Air3">DJI Air 3</a></li>
+                            <li><a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="#"><b>Réglementations</b></a></li>
+                            <li><a href="#CatOuverte">Catégorie Ouverte</a></li>
+                            <li><a href="#CatSpecifique">Catégorie Spécifique</a></li>
+                            <li><a href="#CatCertifiee">Catégorie Certifiée</a></li>
+                            <li><a href="#Classes-C0-C6">Classes C0 - C6</a></li>
+                            
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../shop/index.html"><b>Shop</b></a></li>
+                            <li><a href="../shop/index.html#Neo">DJI Neo</a></li>
+                            <li><a href="../shop/index.html#Mini4Pro">DJI Mini 4 Pro</a></li>
+                            <li><a href="../shop/index.html#Air3">DJI Air 3</a></li>
+                            <li><a href="../shop/index.html#Mavic3Pro">DJI Mavic 3 Pro</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="colonne">
+                        <ul>
+                            <li><a href="../contact/index.html"><b>Contact</b></a></li>
+                            <li><a href="../faq/index.html">FAQ</a></li>
+                            <li><a href="../shop/index.html#Accessoires">Accessoires</a></li>
+                            <li><a href="../auteur/index.html">Auteur du site</a></li>
+                            <li><a href="../mentions-legales/index.html">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
             </div>
-        
-            <div class="Colonneliens">
-
-                <div class="colonne">
-                    <a href="../explorer/index.html">Explorer</a>
-                    <a href="../explorer/index.html#Neo">DJI Neo</a>
-                    <a href="../explorer/index.html#Mini4Pro">DJI Mini 4 Pro</a>
-                    <a href="../explorer/index.html#Air3">DJI Air 3</a>
-                    <a href="../explorer/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="#">Réglementations</a>
-                    <a href="#CatOuverte">Catégorie Ouverte</a>
-                    <a href="#CatSpecifique">Catégorie Spécifique</a>
-                    <a href="#CatCertifiee">Catégorie Certifiée</a>
-                    <a href="#Classes-C0-C6">Classes C0 - C6</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="../shop/index.html">Shop</a>
-                    <a href="../shop/index.html#Neo">DJI Neo</a>
-                    <a href="../shop/index.html#Mini4Pro">DJI Mini 4 Pro</a>
-                    <a href="../shop/index.html#Air3">DJI Air 3</a>
-                    <a href="../shop/index.html#Mavic3Pro">DJI Mavic 3 Pro</a>
-                </div>
-
-                <div class="colonne">
-                    <a href="../shop/index.html#Accessoires">Accessoires</a>
-                    <a href="../faq/index.html">FAQ</a>
-                    <a href="../contact/index.html">Contact</a>
-                    <a href="../auteur/index.html">Auteur du site</a>
-                    <a href="../mentions-legales/index.html">Mentions Légales</a>
-                </div>
-
-            </div>
-
+    
             <p>Copyright © 2025 LonfDrone. Tous droits réservés.</p>
-
+    
         </footer>
 
     </body>

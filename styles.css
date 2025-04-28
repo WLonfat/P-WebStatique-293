@@ -1,0 +1,1105 @@
+/**
+*   Auteur      : William.L
+*   Version     : 3.0
+*   Date        : 25.04.2025
+*   Description : Feuille de style pour toutes les pages du site lonfdrone.com        
+**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+
+.header {
+    overflow: hidden;
+    background-color: #E0E0E0;
+    position: sticky;
+    top: 0;
+}
+
+.header-right {
+    float: right;
+    gap: 7px;
+    display: flex;
+    padding: 30px 0;
+}
+
+.header-right a {
+    text-align: center;
+    color: black;
+    padding: 13px;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 300ms;
+}
+
+.header a:hover {
+    background-color: #d2d2d2;
+    border-radius: 15px;
+    transition-duration: 300ms;
+}
+
+.header a.active {
+    background-color: #d2d2d2;
+    border-radius: 15px;
+}
+
+.header img {
+    width: 350px;
+    margin-left: 0;
+    margin-bottom: -5px;
+}
+
+.header a.contact {
+    background-color: black;
+    color:white;
+    border-radius: 15px;
+    transition-duration: 300ms;
+    border: 2px solid transparent;
+    margin-right: 17px;
+}
+
+.header a.contact:hover  {
+    background-color:white;
+    color:black;
+    border-radius: 15px;
+    transition-duration: 300ms;
+    border: 2px solid black;
+}
+
+.contact-active {
+    background-color:white;
+    color:black;
+    border-radius: 15px;
+    transition-duration: 300ms;
+    border: 2px solid black;
+    margin-right: 17px;
+}
+
+/* Décalage de l'affichage des différents IDs (Liens du footer)*/
+#Neo, #Mini4Pro, #Air3, #Mavic3Pro, #CatOuverte, #CatSpecifique, #CatCertifiee, #Classes-C0-C6, #Accessoires {
+    scroll-margin-top: 140px;
+    scroll-behavior: smooth;
+}
+
+/* Menu burger pour les petits écrans */
+
+.menuBurger {
+    top: 0;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    right: -250px;
+    background-color: #E0E0E0;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+
+.menuBurger a {
+    padding: 10px 32px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    transition-duration: 300ms;
+}
+
+.menuBurger a:hover {
+    background-color: #d2d2d2;
+    border-radius: 15px;
+    transition-duration: 300ms;
+}
+
+.menuBurger ul {
+    list-style-type: none;
+    margin: none;
+    padding: 0;
+}
+
+/* Position du menu burger ouvert */
+
+.menuBurger.active {
+    right: 0;
+}
+
+.buttonFermer {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Boutons */
+
+.button-black, .button-white, .button-gray, input[type = "submit"] {
+    background-color: black;
+    color: white;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.button-black:hover, input[type = "submit"]:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    transition-duration: 300ms;
+}
+
+.button-white {
+    background-color: white;
+    color: black;
+    border: 2.5px solid white;
+}
+
+.button-white:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.button-gray {
+    background-color: #E0E0E0;
+    color: black;
+    border: 2.5px solid #E0E0E0;
+}
+
+.button-gray:hover {
+    background-color: white;
+    color: black;
+    border-color: #E0E0E0;
+}
+
+/*Réglementations*/
+
+.reglementations {
+
+    .titreReglementations {
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        h2 {
+            color:black;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+
+        img {
+            width: 90%;
+            max-width: 1100px;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-left: 100px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    .classeC, .categorie {
+
+        width: 50%;
+        margin-left: 0;
+
+        li, p {
+            color: gray;
+            font-size: 19px;
+            line-height: 35px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+
+    .classes, .categories {
+        display: block;
+    }
+
+    .classesAlign, .categorieAlign {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+    
+    .classeC, .categorie {
+        border: 3px solid black;
+        border-radius: 40px;
+        text-align: justify;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .classesImage, .categorie {
+        border: none;
+    }
+
+    .classesImage, .categorieImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 1100px) {
+
+        .titreReglementations {
+        
+            h1 {
+                font-size: 36px;
+                text-align: center;
+                margin-top: 80px;
+            }
+            
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;
+                margin-top: 20px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-left: 35px;
+        }
+    
+        h3 {
+            font-size: 22px;
+            margin-top: 45px;
+            margin-left: 20px;
+        }
+
+        .classesAlign, .categorieAlign {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .classeC, .categorie {
+            margin-right: 0;
+            margin-left: 0;
+            width: 90%;
+
+            p, li {
+                font-size: 17px;
+                line-height: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            li {
+                margin-left: 10px;
+                line-height: 40px;
+                text-align: left;
+            }
+
+            img {
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+
+        .espace {
+            margin-bottom: 70px;
+        }
+
+        .classesImage {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/*Contact*/
+
+.contact, .formulaireContact {
+
+    h1 {
+        margin-left: 30px;
+        color:black;
+        font-size: 50px;
+        text-align: left;
+        line-height: 0px;
+    }
+    
+    .coordonnees {
+        margin-left: 60px;
+        margin-right: 30px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    h1.coordonnees {
+        margin-top: 40px;
+        margin-left: 0;
+        font-size: 35px;
+        text-align: left;
+        line-height: 20px;
+    }
+
+    a {
+        font-size: 16px;
+        line-height: 35px;
+        text-decoration: none;
+        color: black;
+        font-family: serif;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    p {
+        margin-left: 31px;
+        color: gray;
+        font-size: 22px;
+    }
+
+    label {
+        line-height: 35px;
+        font-size: large;
+        margin-left: 5px;
+    }
+
+    h2.obligatoire {
+        margin-top: 70px;
+        margin-left: 6px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    legend {
+        font-size: 22px;
+    }
+
+    input[type="text"] , [type="number"] {
+        border: 2px solid lightgray;
+        border-radius: 8px;
+        height: 30px;
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    input[type="number"] {
+        margin-left: 10px;
+        margin-right: 0;
+        height: 25px;
+        width: 15%;
+    }
+
+    .select {
+        border: 2px solid lightgray;
+        border-radius: 8px;
+        padding: 4px 0;
+        margin-left: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    input[type = "checkbox"] {
+        margin-right: 60px;
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    label.checkbox {
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+        margin-left: 6px;
+    }
+
+    input[type = "radio"] {
+        margin-right: 15px;
+        margin-bottom: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        border: 2px solid gray ;
+        cursor: pointer;
+    }
+
+    label.radio {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-right: 20px;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .contact {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .formulaire {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 3px solid black;
+        border-radius: 40px;
+        margin-right: 50px;
+        width: 50%;
+        padding: 40px 40px;
+    }
+
+    fieldset {
+        border: 3px solid lightgray;
+        border-radius: 20px;
+        padding: 40px 40px;
+    }
+
+    textarea {
+        border: 2px solid lightgray;
+        border-radius: 8px;
+        margin-right: 50px;
+        width: 94%;
+        height: 200px;
+        padding: 20px 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        resize: vertical;
+    }
+
+    p.reponse {
+        color:green;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-left: 6px;
+        margin-bottom: 0;
+        font-size: 22px;
+    }
+
+    @media (max-width: 1390px) {
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .coordonnees {
+            margin-left: 20px;
+            margin-right: 0;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    
+        h1.coordonnees {
+            font-size: 30px;
+        }
+
+        h2.obligatoire {
+            margin-top: 60px;
+            font-size: 18px;
+        }
+    
+        a {
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        p {
+            font-size: 19px;
+        }
+
+        p.reponse {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+    
+        legend {
+            font-size: 19px;
+        }
+
+        label.radio {
+            font-size: 16px;
+            margin-right: 16px;
+        }
+    
+        .formulaire {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-right: 50px;
+            padding: 40px 40px;
+        }
+    }
+
+    @media (max-width: 1090px) {
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulaire {
+            width: 75%;
+            margin-right: 0;
+        }
+
+        .coordonnees {
+            line-height: 40px;
+            text-align: center;
+        }
+
+        h1.coordonnees {
+            margin-top: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 725px) {
+
+        .formulaire {
+            width: 75%;
+            padding: 43px 43px;
+            margin-right: 0;
+        }
+
+        h1 {
+            font-size: 25.344px;
+            margin-left: 5px;
+        }
+    
+        h2.obligatoire {
+            margin-top: 50px;
+            font-size: 16px;
+        }
+    
+        a {
+            line-height: 25px;
+        }
+
+        p {
+            font-size: 16.8px;
+            margin-left: 5px;
+        }
+
+        p.reponse {
+            font-size: 18.963px;
+        }
+
+        label {
+            font-size: 15px;
+        }
+
+        legend {
+            font-size: 17px;
+        }
+    
+        input[type="number"] {
+            width: 22%;
+        } 
+    
+        .select {
+            font-size: 14px;
+        }
+    
+        fieldset {
+            width: 90%;
+            margin-left: -30px;
+        }
+
+        textarea {
+            width: 84%;
+            font-size: 15px;
+        }
+
+        label.radio {
+            font-size: 15px;
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        input[type = "radio"] {
+            margin-right: 7px;
+            margin-left: 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        fieldset {
+            padding: 34px 34px;
+            margin-right: 0;
+        }
+
+        label.checkbox {
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-break: loose;
+        }
+
+        input[type = "checkbox"] {
+            margin-right: 0px;
+            margin-left: 25px;
+            line-break: loose;
+        }
+
+        input[type = "submit"] {
+            margin-top: 22px;
+            margin-left: 50px;
+            padding: 12px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        input[type = "submit"] {
+            margin-right: 55px;
+            margin-left: 0;
+        }
+    }
+}
+
+/*FAQ, Mentions Légales*/
+
+.faq , .mentionsLegales {
+
+    h1 {
+        color:black;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    h2 {
+        color:black;
+        font-size: 28px;
+        margin-left: 60px;
+        margin-right: 60px;
+        line-height: 40px;
+    }
+    
+    h3 {
+        color:black;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    h4 {
+        color:black;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    p {
+        margin-left: 60px;
+        margin-right: 60px;
+        color: gray;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .hebergeur p  {
+        line-height: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 822px) {
+
+        h1 {
+            font-size: 35px;
+        }
+        
+        h2 {
+            font-size: 19px;
+            margin-left: 20px;
+            margin-right: 20px;
+            line-height: 30px;
+        }
+        
+        h3 {
+            font-size: 15px;
+        }
+        
+        h4 {
+            font-size: 19px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .center {
+            margin-left: 10px;
+        }
+    }
+}
+
+/*Auteur du site*/
+
+.auteurSite {
+
+    h1.left {
+        color:black;
+        font-size: 50px;
+        text-align: left;
+        margin-left: 60px;
+    }
+    
+    p.left {
+        margin-left: 60px;
+        color: gray;
+        font-size: 23px;
+        line-height: 40px;
+    }
+
+    .boxAuteur {
+        display: block;
+    }
+
+    .auteur {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .avatar {
+        border: 3px solid lightgray;
+        border-radius: 40px;
+        margin-right: 50px;
+        height: 350px;
+        width: 420px;
+    }
+
+    .avatar img {
+        width: 350px;
+    }
+    
+    .auteurInfos  {
+        margin-left: 60px;
+        margin-right: 30px;
+        color: black;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    @media (max-width: 1281px) {
+
+        h1.left {
+            font-size: 45px;
+        }
+        
+        p.left {
+            font-size: 21px;
+        }
+
+        .avatar {
+            height: 280px;
+        }
+    
+        .avatar img {
+            width: 280px;
+        }
+        
+        .auteurInfos  {
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+
+      @media (max-width: 990px) {
+
+        h1.left {
+            font-size: 40px;
+        }
+        
+        p.left {
+            font-size: 19px;
+        }
+    
+        .avatar img {
+            width: 250px;
+        }
+        
+        .auteurInfos  {
+            font-size: 17px;
+            line-height: 35px;
+        }
+
+        .auteur {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .avatar {
+            align-self: center;
+            text-align: center;
+            height: 250px;
+            width: 250px;
+            margin-right: 0;
+        }
+    }
+}
+
+/*Footer*/
+
+.footer {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    background-color: #E0E0E0;
+}
+
+.liens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+.colonneLiens {
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    margin-left: 0;
+}
+
+.colonne ul {
+    list-style-type: none;
+    padding: 55px;
+    line-height: 50px;
+}
+
+.colonne a {
+    color: black;
+    text-decoration: none;
+}
+
+.colonne a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.reseauxSociaux a img {
+    margin-left: 30px;
+    width: 40px;
+}
+
+.footer img {
+    width: 400px;
+    margin-left: 0;
+}
+
+/*Footer responsive*/
+@media only screen and (max-width: 1340px) {
+
+    .colonne ul {
+        list-style-type: none;
+        padding: 22px;
+        line-height: 50px;
+    }
+
+    .reseauxSociaux a img {
+        margin-left: 30px;
+        width: 32px;
+    }
+    
+    .footer img {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header img {
+        width: 280px;
+    }
+
+    .header-right {
+        padding: 26px 0;
+    }
+        
+    .header-right a {
+        padding: 9.5px;
+        font-size: 16px;
+    }
+    
+    .header a.contact:hover  {
+        border: 2px solid black;
+    }
+    
+    .contact-active {
+        border: 2px solid black;
+        margin-right: 17px;
+    }
+
+    .footer {
+        display: block;
+        justify-content: center;
+    }
+
+    .colonne ul {
+        list-style-type: none;
+        padding: 9px;
+        line-height: 40px;
+    }
+
+    .colonne a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .reseauxSociaux a img {
+        margin-left: 16px;
+        width: 25px;
+    }
+    
+    .footer img {
+        width: 240px;
+        margin-left: 0;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+}
+
+/* Cache le menu burger sur les écrans plus larges que 822px */
+@media (min-width: 822px) {
+
+    .menuBurger {
+        display: none;
+    }
+
+    .burgerIcon {
+        display: none;
+    }
+}
+
+/* Cache le header principal avec les liens pour les écrans plus petit que 822 px */
+/* Mise en place de l'icone du menu burger dans le header*/
+@media (max-width: 822px) {
+
+    .header-right {
+        display: none;
+    }
+
+    .burgerIcon img {
+        width: 35px;
+        float: right;
+        display: flex;
+        padding: 30px 0;
+        margin-right: 40px;
+    }
+
+    .burgerIcon img:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 780px) {
+    
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        background-color: #E0E0E0;
+    }
+    
+    .liens {
+        margin-right: 0;
+        display: block;
+        justify-content: block;
+    }
+
+    .colonneLiens {
+        display: block;
+        align-items: block;
+        margin-left: 92px;
+    }
+
+    .footer p {
+        display: flex;
+        justify-content:flex-end;
+        color: black;
+        font-size: 14px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Code responsive pour les appareils mobiles */
+@media only screen and (max-width: 822px) {
+
+}
