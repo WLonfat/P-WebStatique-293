@@ -181,6 +181,113 @@ body {
     border-color: #E0E0E0;
 }
 
+/*Explorer*/
+
+.explorer {
+
+    .titreExplorer {
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 80px;
+            margin-top: 20%;
+        }
+        
+        h2 {
+            color:black;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+
+        img {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .droneAlign {
+
+        droneAlign {
+            max-width: 2500px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        width: 50%;
+
+        .titreDrone {
+            margin-left: 50px;
+            display: flex;
+            align-items: space-between;
+            height: 60px;
+            width: auto;
+        }
+
+        .titreDrone, a, img {
+            max-width: 250px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .titreDrone, h1 {
+            font-size: 25px;
+            margin-left: 22px;
+            white-space: nowrap;
+        }
+    }
+    
+    h2 {
+        font-size: 19px;
+        margin-left: 42px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    .drone {
+        display: flex;
+        justify-content: space-around;
+        text-align: justify;
+        margin-left: 60px;
+  
+        li, p {
+            color: gray;
+            font-size: 19px;
+            line-height: 35px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 85%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .drones {
+        display: block;
+    }
+
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    .button-white, a .button-black, a .button-gray, a {
+        text-decoration: none;
+    }
+}
+
 /*Réglementations*/
 
 .reglementations {
