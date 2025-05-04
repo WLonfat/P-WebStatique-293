@@ -191,84 +191,87 @@ body {
             font-size: 50px;
             text-align: center;
             margin-top: 80px;
-            margin-top: 20%;
         }
         
         h2 {
-            color:black;
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
-            margin-top: 20px;
-            margin-left: 0;
+            margin-top: 18px;
+            margin-bottom: 50px;
         }
 
         img {
-            width: 100%;
-            justify-content: center;
+            width: 95%;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        .button-black {
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+            display: flex;
         }
     }
 
     .droneAlign {
 
-        droneAlign {
-            max-width: 2500px;
-            margin-left: 10px;
-            display: flex;
-            align-items: center;
-        }
-        
         width: 50%;
 
         .titreDrone {
-            margin-left: 50px;
+            margin-bottom: 20px;
             display: flex;
-            align-items: space-between;
+            align-items: center;
             height: 60px;
             width: auto;
         }
-
-        .titreDrone, a, img {
-            max-width: 250px;
+        
+        .titreDrone img , .titreDrone a {
+            max-width: 95px;
             margin-left: 10px;
             display: flex;
             align-items: center;
+            margin-top: 0;
         }
 
         .titreDrone, h1 {
             font-size: 25px;
-            margin-left: 22px;
             white-space: nowrap;
+        }
+
+        .button-gray {
+          margin-left: 20px;
         }
     }
     
     h2 {
         font-size: 19px;
-        margin-left: 42px;
-    }
-
-    h3 {
-        font-size: 28px;
-        margin-top: 60px;
-        margin-left: 40px;
     }
 
     .drone {
         display: flex;
         justify-content: space-around;
         text-align: justify;
-        margin-left: 60px;
-  
+        margin-left: 80px;
+        margin-bottom: 100px;
+
         li, p {
             color: gray;
             font-size: 19px;
             line-height: 35px;
-            margin-left: 40px;
-            margin-right: 40px;
+            margin-right: 10%;
+            margin-bottom: 40px;
         }
 
         img {
             width: 100%;
-            max-width: 85%;
+            margin-top: 20px;
+            max-width: 90%;
             height: auto;
             border-radius: 10px;
         }
@@ -286,6 +289,85 @@ body {
     .button-white, a .button-black, a .button-gray, a {
         text-decoration: none;
     }
+
+    @media (max-width: 1583px) {
+
+        .titreExplorer {
+
+            h1 {
+                font-size: 45px;
+            }
+            
+            h2 {
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .droneAlign {
+    
+            .titreDrone {
+               height: 30px;
+            }
+            
+            .titreDrone img , .titreDrone a {
+                max-width: 75px;
+            }
+    
+            .titreDrone, h1 {
+                font-size: 22px;
+            }
+        }
+        
+        h2 {
+            font-size: 17px;
+        }
+    
+        .drone {
+            margin-bottom: 90px;
+    
+            li, p {
+                font-size: 19px;
+                line-height: 30px;
+            }
+        }    
+    }
+
+    @media (max-width: 1100px) {
+
+        .titreExplorer {
+
+            h1 {
+                font-size: 40px;
+            }
+            
+            h2 {
+                font-size: 17px;
+            }
+        }
+
+        .drone {
+            flex-direction: column;
+            margin-left: 42px;
+
+            li, p {
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+
+        .droneAlign {
+            width: 100%;
+        }
+        
+        .drone:nth-child(2) .droneAlign:first-child, .drone:nth-child(4) .droneAlign:first-child {
+            order: 2; /* Image en second */ 
+        }
+    
+        .drone:nth-child(2) .droneAlign:last-child, .drone:nth-child(4) .droneAlign:last-child {
+            order: 1; /* Texte en premier */
+        }       
+    }
 }
 
 /*Réglementations*/
@@ -301,7 +383,6 @@ body {
         }
         
         h2 {
-            color:black;
             font-size: 18px;
             text-align: center;
             margin-top: 20px;
@@ -317,8 +398,6 @@ body {
             margin-left: auto;
             margin-right: auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
 
