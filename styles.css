@@ -1,7 +1,7 @@
 /**
 *   Auteur      : William.L
 *   Version     : 3.0
-*   Date        : 04.05.2025
+*   Date        : 06.05.2025
 *   Description : Feuille de style pour toutes les pages du site lonfdrone.com        
 **/
 
@@ -181,11 +181,11 @@ body {
     border-color: #E0E0E0;
 }
 
-/*Explorer*/
+/*Explorer, Shop*/
 
-.explorer {
+.explorer, .shop {
 
-    .titreExplorer {
+    .titreExplorer, .titreShop, .titreAccessoire {
 
         h1 {
             font-size: 50px;
@@ -219,7 +219,7 @@ body {
         }
     }
 
-    .droneAlign {
+    .droneAlign, .accessoireAlign {
 
         width: 50%;
 
@@ -231,7 +231,8 @@ body {
             width: auto;
         }
         
-        .titreDrone img , .titreDrone a {
+        .titreDrone img, .titreDrone a,
+        .droneAlign img, .droneAlign a {
             max-width: 95px;
             margin-left: 10px;
             display: flex;
@@ -253,7 +254,7 @@ body {
         font-size: 19px;
     }
 
-    .drone {
+    .drone, .accessoire {
         display: flex;
         justify-content: space-around;
         text-align: justify;
@@ -277,7 +278,17 @@ body {
         }
     }
 
-    .drones {
+    .accessoireAlign {
+        img {
+            width: 100%;
+            margin-top: 20px;
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .drones, .accesoires {
         display: block;
     }
 
@@ -292,7 +303,7 @@ body {
 
     @media (max-width: 1583px) {
 
-        .titreExplorer {
+        .titreExplorer, .titreShop, .titreAccessoire {
 
             h1 {
                 font-size: 45px;
@@ -304,17 +315,18 @@ body {
             }
         }
 
-        .droneAlign {
+        .droneAlign, .accessoireAlign {
     
             .titreDrone {
                height: 30px;
             }
             
-            .titreDrone img , .titreDrone a {
+            .titreDrone img , .titreDrone a,
+            .titreAccessoire img , .titreAccessoire a {
                 max-width: 75px;
             }
     
-            .titreDrone, h1 {
+            .titreDrone, .titreAccessoire, h1 {
                 font-size: 22px;
             }
         }
@@ -323,7 +335,7 @@ body {
             font-size: 17px;
         }
     
-        .drone {
+        .drone, .accessoire {
             margin-bottom: 90px;
     
             li, p {
@@ -335,7 +347,7 @@ body {
 
     @media (max-width: 1100px) {
 
-        .titreExplorer {
+        .titreExplorer, .titreShop, .titreAccessoire {
 
             h1 {
                 font-size: 40px;
@@ -346,7 +358,7 @@ body {
             }
         }
 
-        .drone {
+        .drone, .accesoires {
             flex-direction: column;
             margin-left: 42px;
 
@@ -356,8 +368,12 @@ body {
             }
         }
 
-        .droneAlign {
+        .droneAlign, .accessoireAlign {
             width: 100%;
+
+            img.center , .center h1 {
+                margin-left: 200px;
+            }
         }
         
         .drone:nth-child(2) .droneAlign:first-child, .drone:nth-child(4) .droneAlign:first-child {
@@ -370,7 +386,45 @@ body {
     }
 }
 
-/*Réglementations*/
+/*Shop*/
+
+.shop {
+
+    @media (max-width: 1100px) {
+
+        .accesoires, .accessoire {
+            display: block;
+        }
+
+        .titreExplorer, .titreShop, .titreAccessoire {
+
+            h1 {
+                font-size: 38px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+        }
+    
+        .droneAlign {
+            .titreDrone, h1 {
+                font-size: 24px;
+                white-space: initial;
+                margin-right: 36px;
+            }
+        }
+
+        .drone {
+    
+            img {
+                margin-top: 70px;
+            }
+        }
+    }
+}
+
+/*Réglementations */
 
 .reglementations {
 
