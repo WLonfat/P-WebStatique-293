@@ -181,6 +181,152 @@ body {
     border-color: #E0E0E0;
 }
 
+
+/*Accueil*/
+
+.accueil {
+
+    .titreAccueil {
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            text-align: center;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            line-height: 34px;
+            font-family: Didot,Text,Garamond,Times; 
+        }
+
+        img {
+            width: 95%;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+        .button-black, .button-gray {      
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+
+    .titreCategorie, .titreLoisir {
+
+        h1 {
+            font-size: 35px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .buttons {
+        margin-bottom: 100px;
+        margin: auto;
+        gap: 50px;
+        white-space: nowrap;
+    }
+
+    .titreDrone {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: auto;
+    }
+
+    .droneAlign {
+
+        width: 50%;
+
+        .titreDrone img, .titreDrone a,
+        .droneAlign img, .droneAlign a {
+            max-width: 95px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .titreDrone, h1 {
+            font-size: 25px;
+            white-space: nowrap;
+        }
+
+        .button-gray {
+          margin-left: 20px;
+        }
+    }
+
+    .drone, .categoriesAlign, .classesAlign, .droneloisirsAlign {
+        display: flex;
+        justify-content: space-around;
+        text-align: justify;
+        margin-left: 80px;
+        margin-bottom: 100px;
+
+        li, p {
+            color: gray;
+            font-size: 19px;
+            line-height: 35px;
+            margin-right: 10%;
+            margin-bottom: 40px;
+        }
+
+        img {
+            width: 100%;
+            margin-top: 20px;
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .classe {
+
+        width: 50%;
+        border: 3px solid black;
+        border-radius: 40px;
+        text-align: justify;
+        margin-left: 60px;
+        margin-right: 60px;
+
+        p {
+            color: gray;
+            font-size: 19px;
+            line-height: 35px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 60px;
+            margin-left: 40px;
+        }
+    }    
+}
+
+
 /*Explorer, Shop*/
 
 .explorer, .shop {
@@ -534,7 +680,11 @@ body {
     .classeC, .categorie {
 
         width: 50%;
-        margin-left: 0;
+        border: 3px solid black;
+        border-radius: 40px;
+        text-align: justify;
+        margin-left: 60px;
+        margin-right: 60px;
 
         li, p {
             color: gray;
@@ -560,14 +710,6 @@ body {
         display: flex;
         justify-content: space-around;
         margin-bottom: 70px;
-    }
-    
-    .classeC, .categorie {
-        border: 3px solid black;
-        border-radius: 40px;
-        text-align: justify;
-        margin-left: 60px;
-        margin-right: 60px;
     }
 
     .classesImage, .categorie {
