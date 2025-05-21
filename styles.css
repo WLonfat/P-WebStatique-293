@@ -215,22 +215,42 @@ body {
             display: flex;
         }
 
-        .button-black, .button-gray {      
-            padding: 20px;
-        }
-
         a {
             text-decoration: none;
             white-space: nowrap;
         }
     }
 
-    .titreCategorie, .titreLoisir {
+    .button-black, .button-gray {      
+        padding: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        align-content: flex-end;
+        margin-bottom: 80px;
+        
+        a {
+            gap: 30px;
+            margin: auto
+        }
+    }
+
+    .titreDrone {
 
         h1 {
             font-size: 35px;
-            margin-left: 100px;
-            margin-bottom: 20px;
+            margin-left: 70px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .titreLoisir, .titreCategorie {
+
+         h1 {
+            font-size: 35px;
+            margin-left: 85px;
+            margin-bottom: 40px;
         }
     }
 
@@ -239,42 +259,42 @@ body {
         margin-bottom: 40px;
     }
 
-    .buttons {
-        margin-bottom: 100px;
-        margin: auto;
-        gap: 50px;
-        white-space: nowrap;
-    }
-
     .titreDrone {
         margin-bottom: 20px;
         display: flex;
         align-items: center;
         height: 60px;
         width: auto;
+
+        .button-black {
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 80px;
+            display: flex;
+        }
+    }
+
+    .titreDrone img, .titreDrone a,
+    .droneAlign img {
+        margin-left: 14px;
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .titreDrone, h1 {
+        font-size: 25px;
+        white-space: nowrap;
     }
 
     .droneAlign {
 
         width: 50%;
-
-        .titreDrone img, .titreDrone a,
-        .droneAlign img, .droneAlign a {
-            max-width: 95px;
-            margin-left: 10px;
-            display: flex;
-            align-items: center;
-            margin-top: 0;
-        }
-
-        .titreDrone, h1 {
-            font-size: 25px;
-            white-space: nowrap;
-        }
-
-        .button-gray {
-          margin-left: 20px;
-        }
     }
 
     .drone, .categoriesAlign, .classesAlign, .droneloisirsAlign {
@@ -299,6 +319,10 @@ body {
             height: auto;
             border-radius: 10px;
         }
+    }
+
+    .classesAlign {
+        margin-left: 0;
     }
 
     .classe {
