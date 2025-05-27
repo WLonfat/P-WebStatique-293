@@ -256,7 +256,7 @@ body {
         }
     }
 
-    .titreLoisir, .titreCategorie, .titreAvis {
+    .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis {
 
         h1 {
             font-size: 35px;
@@ -423,6 +423,7 @@ body {
 
         h1 {
             font-size: 35px;
+            margin-top: 10%;
             margin-left: 85px;
             display: flex;
             align-items: center;
@@ -453,11 +454,11 @@ body {
             padding: 18px;
         }
 
-        .titreLoisir, .titreCategorie, .titreAvis, .titreDrone {
+        .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis, .titreDrone {
 
             h1 {
                 font-size: 32px;
-                margin-left: 75px;
+                margin-left: 70px;
             }
         }
     
@@ -545,7 +546,9 @@ body {
           .titreAccueil {
 
             h1 {
-                font-size: 35px;
+                font-size: 30px;
+                white-space: initial;
+                line-height: 40px;
             }
             
             h2 {
@@ -556,14 +559,15 @@ body {
         }
 
         .button-black, .button-gray {      
-            padding: 20px;
+            padding: 18px;
         }
 
-        .titreLoisir, .titreCategorie, .titreAvis, .titreDrone {
+        .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis, .titreDrone {
 
             h1 {
-                font-size: 32px;
-                margin-left: 75px;
+                font-size: 27px;
+                white-space: initial;
+                line-height: 45px;
             }
         }
     
@@ -571,6 +575,10 @@ body {
             font-size: 26px;
             margin-bottom: 40px;
             margin-top: 40px;
+        }
+
+        .titreAir3 {
+            margin-left: 70px;
         }
 
         .titreDrone, .titreDrone img, .titreDrone a, .droneAlign img {
@@ -625,7 +633,7 @@ body {
             }
 
             h1, h2, p, .button-black  {
-                margin-left: 42px;
+                margin-left: 70px;
                 margin-right: 18px;
             }
 
@@ -707,16 +715,20 @@ body {
                 margin-bottom: 10px;
             }
         }
+    }
+
+    @media (max-width: 750px) {
 
         .contactezNous {
-            display: block;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             align-content: center;
             padding: 10px;
 
             h1 {
                 font-size: 32px;
-                margin-left: 85px;
+                margin-left: 0;
             }
 
             .button-black, .button-gray {      
