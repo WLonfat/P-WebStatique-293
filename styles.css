@@ -85,7 +85,7 @@ body {
 
 /* Décalage de l'affichage des différents IDs (Liens du footer)*/
 #Neo, #Mini4Pro, #Air3, #Mavic3Pro, #CatOuverte, #CatSpecifique, #CatCertifiee, #Classes-C0-C6, #Accessoires {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 120px;
     scroll-behavior: smooth;
 }
 
@@ -238,7 +238,7 @@ body {
         }
     }
 
-    .buttonsAlign {
+    .buttonsAlign, .buttonsContact {
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -247,21 +247,23 @@ body {
         gap: 30px;
     }
 
-    .titreDrone {
+    .buttonsContact {
+        padding: 20px;
+    }
+
+    .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis, .titreDrone {
 
         h1 {
             font-size: 35px;
             margin-left: 70px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
     }
 
-    .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis {
+    .titreDrone {
 
         h1 {
-            font-size: 35px;
-            margin-left: 85px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
     }
 
@@ -293,6 +295,14 @@ body {
         margin-top: -15px;
     }
 
+    .droneAlign {
+        width: 50%;
+
+        .buttonsAlign {
+            margin-left: -20px;
+        }
+    }
+
     a {
         text-decoration: none;
     }
@@ -300,10 +310,6 @@ body {
     .titreDrone, h1 {
         font-size: 25px;
         white-space: nowrap;
-    }
-
-    .droneAlign {
-        width: 50%;
     }
 
     .categorie {
@@ -339,7 +345,7 @@ body {
         margin-left: 20px;
     }
 
-    .droneloisirsAlign {
+    .droneloisirsAlign, .drone {
         margin-bottom: 0;
     }
 
@@ -558,16 +564,22 @@ body {
             }
         }
 
-        .button-black, .button-gray {      
-            padding: 18px;
+        .buttons {
+            margin-left: 30px;
+            margin-right: 30px;
         }
 
-        .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis, .titreDrone {
+        .button-black, .button-gray {      
+            padding: 16px;
+        }
+
+        .titreLoisir, .titreCategorie, .titreVainqueur, .titreAvis, .titreDrone{
 
             h1 {
-                font-size: 27px;
+                font-size: 26px;
                 white-space: initial;
                 line-height: 45px;
+                margin-left: 10%;
             }
         }
     
@@ -577,14 +589,14 @@ body {
             margin-top: 40px;
         }
 
-        .titreAir3 {
-            margin-left: 70px;
+
+        .titreDrone  {
+            display: block;
+            margin-bottom: 50px;
         }
 
-        .titreDrone, .titreDrone img, .titreDrone a, .droneAlign img {
-            display: block;
-            margin-left: 30px;
-            margin-bottom: 20px;
+        .titreDrone img {
+            display: none;
         }
 
         .drone, .categoriesAlign, .classesAlign, .droneloisirsAlign {
@@ -603,42 +615,18 @@ body {
             }
         }
 
-        .categorieAlign {
-            li, p {
-                margin-bottom: 60px;
-            }
-        }
-
-        .drone {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            margin-left: 0;
-
-            li, p {
-                font-size: 17px;
-                line-height: 30px;
-            }
+        .categoriesAlign, .droneloisirsAlign, .drone {
+            margin-left: 10%;
         }
 
         .droneAlign {
-
             width: 100%;
+            display: block;
+            align-items: center;
+            margin-top: 15px;
 
             img {
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-                display: flex;
-            }
-
-            h1, h2, p, .button-black  {
-                margin-left: 70px;
-                margin-right: 18px;
-            }
-
-            .button-black {
-                margin-right: 0;
+                margin-left: 0;
             }
         }
 
@@ -659,9 +647,8 @@ body {
         }
 
         .classe {
-            width: 90%;
-            margin-top: 120px;
-            margin-bottom: -60px;
+            width: 84%;
+            margin-bottom: 60px;
 
             p, li {
                 font-size: 18px;
@@ -718,6 +705,10 @@ body {
     }
 
     @media (max-width: 750px) {
+
+         .titreDrone  {
+            margin-right: 20px;
+        }
 
         .contactezNous {
             display: flex;
