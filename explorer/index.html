@@ -4,8 +4,8 @@
     <head>
         <!--
         Auteur      : William.L
-        Version     : 4.0
-        Date        : 25.04.2025
+        Version     : 5.0
+        Date        : 29.05.2025
         Description : Page "Explorer" du site LonfDrone
         -->
 
@@ -13,12 +13,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles.css">
         <script src="../script.js" defer></script>
-        <link rel="icon" href="../Images/Logo-LonfDrone/Favicon/favicon.ico" sizes="any">
-        <link rel="icon" type="favicon-32x32" href="../Images/Logo-LonfDrone/Favicon/favicon-32x32.png">
-        <link rel="icon" type="apple-touch-icon" href="../Images/Logo-LonfDrone/Favicon/apple-touch-icon.png">
-        <link rel="icon" type="android-chrome-512x512" href="../Images/Logo-LonfDrone/Favicon/android-chrome-512x512.png">
-        <link rel="icon" type="android-chrome-192x192" href="../Images/Logo-LonfDrone/Favicon/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" href="../Images/Logo-LonfDrone/Favicon/LonfDrone-favicon.png">
+        <link rel="icon" href="../images/Logo-LonfDrone/Favicon/favicon.ico" sizes="any">
+        <link rel="icon" type="favicon-32x32" href="../images/Logo-LonfDrone/Favicon/favicon-32x32.png">
+        <link rel="icon" type="apple-touch-icon" href="../images/Logo-LonfDrone/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="android-chrome-512x512" href="../images/Logo-LonfDrone/Favicon/android-chrome-512x512.png">
+        <link rel="icon" type="android-chrome-192x192" href="../images/Logo-LonfDrone/Favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" href="../images/Logo-LonfDrone/Favicon/LonfDrone-favicon.png">
 
         <title>Explorer - LonfDrone</title>
 
@@ -28,7 +28,7 @@
 
         <header class="header">
 
-            <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a>
+            <a href="../index.html" class="logo"><img src="../images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a>
 
             <div class="header-right">
                 <a href="../index.html">Accueil</a>
@@ -39,7 +39,7 @@
                 <a href="../contact/index.html" class="contact">Contact</a>
             </div>
 
-            <a onclick="ouvrirNav()" class="burgerIcon"><img src="../Images/Header/Hamburger_icon.png"></a>
+            <a onclick="ouvrirNav()" class="burgerIcon"><img src="../images/Header/Hamburger_icon.png"></a>
 
             <div id="menuBurger" class="menuBurger">
 
@@ -58,150 +58,154 @@
             
         </header>
 
-        <section class="TitreExplorer">
+        <section class="explorer">
 
-            <img src="../Images/Explorer/DJI-Air3-Accueil.jpg" alt="Image de fond">
-            <h1>Explorer</h1>
-            <p>Explorer les différents drones !</p>
-            <a href="../shop/index.html"><button class="button-black">Voir le shop</button></a>
+            <section class="titreExplorer">
 
-        </section>
+                <h1>Explorer</h1>
+                <h2>Explorez les différents drones !</h2>
+                <img src="../images/Explorer/DJI-Air3-Accueil.jpg" alt="Image de fond">
+                <a href="../shop/index.html"><button class="button-black">Voir le shop</button></a>
 
-        <section class="drones">
-
-            <article class="drone" id="Neo">
-
-                <article class="droneAlign">
-
-                    <div class="titreDrone" >
-                        <h1>Le DJI Neo</h1>
-                        <a href="../reglementations/index.html#ClasseC0"><img src="../Images/Explorer/Classe-C0.png"></a>
-                    </div>
-                    
-                    <p>Un drone parfait pour les débutants, qui recherche uniquement à faire des plans photos et vidéos simple. 
-                       Ce drone peut facilement décoller de votre main. Son autonomie est de 18 minutes et il nécessite pas de formation ou d’examens à passer car il pèse moins de 250g,
-                       il est donc facilement transportable et se trouve dans la catégorie C0.
-                    </p>
-
-                    <h2>Un drone simple et facile d’utilisation</h2>
-
-                    <p>Il est possible de le contrôler avec la radiocommande fournie, ou directement depuis votre smartphone.</p>
-
-                    <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐</p>
-
-                </article>
-
-                <article class="droneAlign">
-
-                    <img src="../Images/Explorer/DJI-Neo.jpg" alt="Image du drone DJI Neo">
-                    <p>Image du DJI Neo en vol avec la protection d’hélices</p>
-                    <a href="../reglementations/index.html#ClasseC0"><button class="button-black">Réglementations</button></a>
-                    <a href="../shop/index.html#Neo"><button class="button-gray">Acheter</button></a>
-
-                </article>
-
-            </article>
+            </section>
             
-            <article class="drone" id="Mini4Pro">
+            <section class="drones">
 
-                <article class="droneAlign">
-
-                    <img src="../Images/Explorer/DJI-Mini4Pro.jpg" alt="Image du drone DJI Mini 4 Pro">
-                    <p>Image du DJI Mini 4 Pro, en mode paysage</p>
-                    <a href="../reglementations/index.html#ClasseC0"><button class="button-black">Réglementations</button></a>
-                    <a href="../shop/index.html#Mini4Pro"><button class="button-gray">Acheter</button></a>
-
+                <article class="drone" id="Neo">
+    
+                    <article class="droneAlign">
+    
+                        <div class="titreDrone">
+                            <h1>Le DJI Neo</h1>
+                            <a href="../reglementations/index.html#ClasseC0"><img src="../images/Explorer/Classe-C0.png"></a>
+                        </div>
+                        
+                        <p>Un drone parfait pour les débutants, qui recherchent uniquement à faire des plans photos et vidéos simple. 
+                           Ce drone peut facilement décoller de votre main. Son autonomie est de 18 minutes; il ne nécessite pas de formation ou d’examens à passer car il pèse moins de 250g,
+                           il est donc facilement transportable et se trouve dans la catégorie C0.
+                        </p>
+    
+                        <h2>Un drone simple et facile d’utilisation</h2>
+    
+                        <p>Il est possible de le contrôler avec la radiocommande fournie, ou directement depuis votre smartphone.</p>
+    
+                        <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐</p>
+    
+                    </article>
+    
+                    <article class="droneAlign">
+    
+                        <img src="../images/Explorer/DJI-Neo.jpg" alt="Image du drone DJI Neo">
+                        <p>Image du DJI Neo en vol avec la protection d’hélices</p>
+                        <a href="../reglementations/index.html#ClasseC0"><button class="button-black">Réglementations</button></a>
+                        <a href="../shop/index.html#Neo"><button class="button-gray">Acheter</button></a>
+                        
+                    </article>
+    
                 </article>
-
-                <article class="droneAlign">
-
-                    <div class="titreDrone">
-                        <h1>Le DJI Mini 4 Pro</h1>
-                        <a href="../reglementations/index.html#ClasseC0"><img src="../Images/Explorer/Classe-C0.png"></a>
-                    </div>
+                
+                <article class="drone" id="Mini4Pro">
+    
+                    <article class="droneAlign">
+    
+                        <img src="../images/Explorer/DJI-Mini4Pro.jpg" alt="Image du drone DJI Mini 4 Pro">
+                        <p>Image du DJI Mini 4 Pro, en mode paysage</p>
+                        <a href="../reglementations/index.html#ClasseC0"><button class="button-black">Réglementations</button></a>
+                        <a href="../shop/index.html#Mini4Pro"><button class="button-gray">Acheter</button></a>
+    
+                    </article>
+    
+                    <article class="droneAlign">
+    
+                        <div class="titreDrone">
+                            <h1>Le DJI Mini 4 Pro</h1>
+                            <a href="../reglementations/index.html#ClasseC0"><img src="../images/Explorer/Classe-C0.png"></a>
+                        </div>
+                        
+                        <p>Le drone possède une caméra frontale de 48 Mpx, et possède de nombreuses options, comme l’ActiveTrack 360°, la détection d’obstacles,
+                           ou encore la rotation d’objectif qu'il est le seul à avoir, pour pouvoir filmer en 4K en mode portrait. 
+                           Son autonomie est de 34 minutes ce qui est une très bonne autonomie pour un petit drone.
+                        </p>
+    
+                        <h2>Un drone tout en un</h2>
+    
+                        <p>C’est l’un des meilleurs drones pour son rapport fonctionnalités / poids. Comme le Neo il pèse en dessous de 250g et est classé en C0</p>
+    
+                        <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐ ⭐</p>
+    
+                    </article>
+    
+                </article>
+    
+                <article class="drone" id="Air3">
+    
+                    <article class="droneAlign">
+    
+                        <div class="titreDrone">
+                            <h1>Le DJI Air 3</h1>
+                            <a href="../reglementations/index.html#ClasseC1"><img src="../images/Explorer/Classe-C1.png"></a>
+                        </div>
+                        
+                        <p>Un drone multi objectifs, qui a beaucoup de fonctionnalités avancées comme la détection d’obstacle à 360°, 
+                           2 téléobjectifs dont un Grand-Angle ou encore un plus grand objectif pour pouvoir zoomer plus de 9x en vidéo 4K 100 FPS. 
+                           Il possède comme le 4 Pro la fonction ActiveTrack 360°. Son autonomie est de 46 minutes. Il pèse 720g, il est donc classé dans la catégorie C1.
+                        </p>
+    
+                        <h2>Un drone qui fait tout</h2>
+    
+                        <p>Il est également capable de filmer en 30 FPS,
+                           ce qui est parfait pour faire d’excellents plans vidéos en ralenti.
+                        </p>
+    
+                        <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐ ⭐</p>
+    
+                    </article>
+    
+                    <article class="droneAlign">
+    
+                        <img src="../images/Explorer/DJI-Air3.jpg" alt="Image du drone DJI Air 3">
+                        <p>Image du DJI Air 3 provenant du site officiel de DJI</p>
+                        <a href="../reglementations/index.html#ClasseC1"><button class="button-black">Réglementations</button></a>
+                        <a href="../shop/index.html#Air3"><button class="button-gray">Acheter</button></a>
                     
-                    <p>Le drone possède une caméra frontale de 48 Mpx, et possède de nombreuses options, comme l’ActiveTrack 360°, la détection d’obstacles,
-                       ou encore la rotation d’objectif qui l’est le seul à avoir, pour pouvoir filmer en 4K en mode portrait. 
-                       Son autonomie est de 34 minutes ce qui est une très bonne autonomie.
-                    </p>
-
-                    <h2>Un drone tout en un</h2>
-
-                    <p>C’est l’un des meilleurs drones pour son rapport fonctionnalités / poids. Comme Le Neo il pèse en dessous de 250g et est classé en C0</p>
-
-                    <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐ ⭐</p>
-
+                    </article>
+    
                 </article>
-
-            </article>
-
-            <article class="drone" id="Air3">
-
-                <article class="droneAlign">
-
-                    <div class="titreDrone">
-                        <h1>Le DJI Air 3</h1>
-                        <a href="../reglementations/index.html#ClasseC1"><img src="../Images/Explorer/Classe-C1.png"></a>
-                    </div>
-                    
-                    <p>Un drone multi objectif, qui à beaucoup de fonctionnalités avancées comme la détection d’obstacle à 360°, 
-                       2 téléobjectifs dont un Grand-Angle ou encore un plus grand objectif pour pouvoir zoomer plus de 9x en vidéo 4K 100 FPS. 
-                       Il possède comme le 4 Pro la fonction ActiveTrack 360°. Son autonomie est de 46 minutes. Il pèse 720g, il est donc classé dans la catégorie C1.
-                    </p>
-
-                    <h2>Un drone qui fait tout</h2>
-
-                    <p>Il est également capable de filmer en 30 FPS,
-                       ce qui est parfait pour faire d’excellents plans vidéos en ralenti.
-                    </p>
-
-                    <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐ ⭐</p>
-
+    
+                <article class="drone" id="Mavic3Pro">
+    
+                    <article class="droneAlign">
+    
+                        <img src="../images/Explorer/DJI-Mavic-3-Pro.jpg" alt="Image du drone DJI Mavic 3 Pro">
+                        <p>Image du drone DJI Mavic 3 Pro en vol</p>
+                        <a href="../reglementations/index.html#ClasseC2"><button class="button-black">Réglementations</button></a>
+                        <a href="../shop/index.html#Mavic3Pro"><button class="button-gray">Acheter</button></a>
+    
+                    </article>
+    
+                    <article class="droneAlign">
+    
+                        <div class="titreDrone">
+                            <h1>Le DJI Mavic 3 Pro</h1>
+                            <a href="../reglementations/index.html#ClasseC2"><img src="../images/Explorer/Classe-C2.png"></a>
+                        </div>
+                        
+                        <p>Un drone multi objectifs, qui a beaucoup de fonctionnalités avancées comme la détection d’obstacle à 360°, l’ActiveTrack 360°,
+                           3 téléobjectifs, (de 166mm, 70mm et 24mm) pour pouvoir capturer et filmer, toujours en 4K des plans de très loin comme de très près.
+                           Il possède aussi 1 To de stockage interne, et son autonomie est de 46 minutes. Son poids est de 958g est est donc dans la classe C2.
+                        </p>
+    
+                        <h2>Un drone performant</h2>
+    
+                        <p>Il a, avec ses objectifs, un zoom optique intégré de 3x, avec un zoom  numérique allant jusqu'à 30x. Sa vitesse maximale est de 68 km/h en mode sport.</p>
+    
+                        <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐ ⭐</p>
+    
+                    </article>
+    
                 </article>
-
-                <article class="droneAlign">
-
-                    <img src="../Images/Explorer/DJI-Air3.jpg" alt="Image du drone DJI Air 3">
-                    <p>Image du DJI Air 3 provenant du site officiel de DJI</p>
-                    <a href="../reglementations/index.html#ClasseC1"><button class="button-black">Réglementations</button></a>
-                    <a href="../shop/index.html#Air3"><button class="button-gray">Acheter</button></a>
-
-                </article>
-
-            </article>
-
-            <article class="drone" id="Mavic3Pro">
-
-                <article class="droneAlign">
-
-                    <img src="../Images/Explorer/DJI-Mavic-3-Pro.jpg" alt="Image du drone DJI Mavic 3 Pro">
-                    <p>Image du drone DJI Mavic 3 Pro en vol</p>
-                    <a href="../reglementations/index.html#ClasseC2"><button class="button-black">Réglementations</button></a>
-                    <a href="../shop/index.html#Mavic3Pro"><button class="button-gray">Acheter</button></a>
-
-                </article>
-
-                <article class="droneAlign">
-
-                    <div class="titreDrone">
-                        <h1>Le DJI Mavic 3 Pro</h1>
-                        <a href="../reglementations/index.html#ClasseC2"><img src="../Images/Explorer/Classe-C2.png"></a>
-                    </div>
-                    
-                    <p>Un drone multi objectif, qui à beaucoup de fonctionnalités avancées comme la détection d’obstacle à 360°, l’ActiveTrack 360°,
-                       3 téléobjectifs, (de 166mm, 70mm et 24mm) pour pouvoir capturer et filmer, toujours en 4K des plans de très loin comme de très près.
-                       Il possède aussi 1To de stockage interne, et son autonomie est de 46 minutes. Son poids est de 958g est est donc dans la classe C2.
-                    </p>
-
-                    <h2>Un drone performant</h2>
-
-                    <p>Il a, avec ses objectifs, un zoom optique intégré de 3x, avec un zoom  numérique allant jusqu'à 30x. Sa vitesse maximale est de 68 km/h en mode sport.</p>
-
-                    <p>Notre Évaluation sur 5 :  ⭐ ⭐ ⭐ ⭐ ⭐</p>
-
-                </article>
-
-            </article>
+    
+            </section>
 
         </section>
 
@@ -211,14 +215,14 @@
     
                 <div>
     
-                    <a href="../index.html" class="logo"><img src="../Images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a><br></br>
+                    <a href="../index.html" class="logo"><img src="../images/Logo-LonfDrone/LonfDrone-Left-black.png" alt="Logo-LonfDrone"></a><br></br>
     
                     <div class="reseauxSociaux">
-                        <a href="https://www.instagram.com/etmlausanne/" class="premier"><img src="../Images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
-                        <a href="https://www.facebook.com/etmlausanne"><img src="../Images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
-                        <a href="https://x.com/etml_lausanne"><img src="../Images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
-                        <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../Images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
-                        <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../Images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
+                        <a href="https://www.instagram.com/etmlausanne/" class="premier"><img src="../images/Footer/Instagram-Logo.png" alt="Logo de Instagram"></a>
+                        <a href="https://www.facebook.com/etmlausanne"><img src="../images/Footer/Facebook-Logo.png" alt="Logo de Facebook"></a>
+                        <a href="https://x.com/etml_lausanne"><img src="../images/Footer/Twitter-Logo.png" alt="Logo de Twitter"></a>
+                        <a href="https://ch.linkedin.com/school/etml-lausanne/"><img src="../images/Footer/LinkedIn-Logo.png" alt="Logo de LinkedIn"></a>
+                        <a href="https://www.youtube.com/@ecoletechniqueecoledesmeti6411"><img src="../images/Footer/YouTube-Logo.png" alt="Logo de YouTube"></a>
                     </div>
     
                 </div>
@@ -261,7 +265,7 @@
                             <li><a href="../faq/index.html">FAQ</a></li>
                             <li><a href="../shop/index.html#Accessoires">Accessoires</a></li>
                             <li><a href="../auteur/index.html">Auteur du site</a></li>
-                            <li><a href="../mentions-legales/index.html">Mentions Légales</a></li>
+                            <li><a href="../mentions-legales/index.html">Mentions légales</a></li>
                         </ul>
                     </div>
     
